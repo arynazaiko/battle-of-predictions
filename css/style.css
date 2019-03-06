@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  width: 1380px;
+  min-width: 1200px;
   /* width: 1140px; */
   margin: 0 auto;
 }
@@ -269,6 +269,9 @@ body {
 }
 
 .sidebar {
+  flex-basis: 335px;
+  flex-grow: 0;
+  flex-shrink: 0;
   font-family: 'Blogger Sans';
   font-size: 14px;
   font-weight: normal;
@@ -276,7 +279,7 @@ body {
 }
 
 .sidebar-filter {
-  width: 335px;
+  width: 100%;
   /* height: 100%; */
   border-radius: 4px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
@@ -298,7 +301,7 @@ body {
 }
 
 .sidebar-filter .search {
-  width: 295px;
+  width: 100%;
   height: 38px;
   border-radius: 4px;
   box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
@@ -323,21 +326,23 @@ body {
   background-color: #ffffff;
 }
 
-/* ///////////// radio button sidebar /////////////// */
-
-.sidebar-filter .contest-style .radio-btns li {
-  width: 295px;
-  height: 40px;
-  border-radius: 8px;
+.sidebar-filter .predictions-mode li {
+  flex-basis: 50%;
 }
 
-.sidebar-filter .radio-btns {
+.sidebar-filter .contest-type {
+  flex-basis: 33.33%;
+}
+
+/* ///////////// radio button sidebar /////////////// */
+
+.radio-btns {
   display: flex;
   list-style: none;
 }
 
-.sidebar-filter .radio-btns li {
-  width: 148px;
+.radio-btns li {
+  width: 100px;
   height: 38px;
   border-radius: 4px;
   box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
@@ -347,7 +352,7 @@ body {
   margin-bottom: 30px;
 }
 
-.sidebar-filter .radio-btns label, .sidebar-filter .radio-btns input {
+.radio-btns label, .radio-btns input {
   display: block;
   position: absolute;
   top: 0;
@@ -356,12 +361,12 @@ body {
   bottom: 0;
 }
 
-.sidebar-filter .radio-btns input[type="radio"] {
+.radio-btns input[type="radio"] {
   opacity: 0.01;
   z-index: 100;
 }
 
-.sidebar-filter .radio-btns input[type="radio"]:checked + label,
+.radio-btns input[type="radio"]:checked + label,
 .Checked + label {
   background-color: rgba(230, 73, 45, 0.2);
   /* font-family: BloggerSans; */
@@ -372,12 +377,12 @@ body {
   color: #e6492d;
 }
 
-.sidebar-filter .radio-btns label {
+.radio-btns label {
   padding: 10px;
   cursor: pointer;
 }
 
-.sidebar-filter .radio-btns label:hover {
+.radio-btns label:hover {
   background:#DDD;
 }
 
@@ -406,10 +411,13 @@ body {
 
 /*  ////////////////////// TABLE ///////////////////// */
 
-table {
-  width: 1027px;
-  /* width: 100%; */
+.main-table {
+  flex-grow: 1;
+}
+
+.main-table table {
   height: 100%;
+  width: 100%;
   border-collapse: collapse;
   border-radius: 4px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
@@ -421,29 +429,29 @@ table {
   /* padding: 0 20px 0 10px; */
 }
 
-table tr {
+.main-table table tr {
   text-align: left;
   border: solid 1px #eaedf3;
 }
 
-table tr:hover {
+.main-table table tr:hover {
   opacity: 0.6;
   border: solid 2px #e6492d;
   background-color: rgba(230, 73, 45, 0.1);
 }
 
-table th {
+.main-table table th {
   font-size: 12px;
   font-weight: normal;
   color: #9ea0a5;
   padding: 15px 0;
 }
 
-table th:first-child {
+.main-table table th:first-child {
   text-align: center;
 }
 
-table td {
+.main-table table td {
   font-family: "Blogger Sans";
   font-size: 14px;
   font-weight: 500;
@@ -452,11 +460,11 @@ table td {
   padding: 25px 0px;
 }
 
-table td:first-child, table td:last-child {
+.main-table table td:first-child, .main-table table td:last-child {
   text-align: center;
 }
 
-table .tournament-icon {
+.main-table table .tournament-icon {
   width: 56px;
   height: 56px;
   border-radius: 15px;
@@ -468,7 +476,7 @@ table .tournament-icon {
 } */
 
 
-table .tournament-title {
+.main-table table .tournament-title {
   font-family: "Blogger Sans";
   font-size: 16px;
   font-weight: 500;
@@ -476,22 +484,22 @@ table .tournament-title {
   color: #3e3f42;
 }
 
-table .user {
+.main-table table .user {
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
   color: #9ea0a5;
 }
 
-table .prizes {
+.main-table table .prizes {
   color: #34aa44;
 }
 
-table .grey-color {
+.main-table table .grey-color {
   color: #6b6c6f;
 }
 
-table .join-button {
+.main-table table .join-button {
   width: 75px;
   height: 38px;
   border-radius: 4px;

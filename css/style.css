@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: 'Blogger Sans';
+  font-size: 18px;
+  font-style: normal;
+  background-color: #fbfbfd;
+}
+
+.container {
+  width: 1380px;
+  /* width: 1140px; */
+  margin: 0 auto;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between  ;
+  align-items: center;
+  width: 40%;
+}
+
+.header {
+  height: 100%;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-img {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.header .logo-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3e3f42;
+}
+
+.divider {
+  border: 1px solid #eaedf3;
+  height: 38px;
+  /* background-color: gray; */
+}
+
+.header .menu {}
+
+.header .menu ul {
+  list-style: none;
+}
+
+.header .menu ul li {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  color: #6b6c6f;
+}
+
+.header .menu ul li.active a {
+  font-weight: bold;
+  color: #e6492d;
+}
+
+.header .menu ul li a {
+  text-decoration: none;
+  color: #6b6c6f;
+}
+
+/*
+.header .menu ul li a:active {
+  color: #e6492d;
+} */
+
+.header .deposit {
+  font-size: 26px;
+  font-weight: bold;
+  color: #34aa44;
+}
+
+.header .add-deposit {
+  width: 149px;
+  height: 38px;
+  font-family: 'Blogger Sans';
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px 0 rgba(19, 31, 21, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+  border: solid 1px #2d9c3c;
+  background-image: linear-gradient(to top, #34aa44, #38b249);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header .add-deposit i {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.header .user-pic {
+  width: 38px;
+  height: 38px;
+  background-color: brown;
+  border-radius: 50%;
+}
+.header .user-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3e3f42;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 20px;
+  /* background-color: white; */
+}
+
+/* ////////////////RADIO BUTTONS TOPBAR////////////////// */
+
+.topbar .sections {
+  display: flex;
+  list-style: none;
+}
+
+.topbar .sections li {
+  position: relative;
+  /* padding: 5px; */
+  width: 70px;
+  height: 30px;
+  /* font-family: Roboto; */
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: #9ea0a5;
+  margin-right: 10px;
+}
+
+.topbar .sections label, .topbar .sections input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.topbar .sections input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.topbar .sections input[type="radio"]:checked + label,
+.Checked + label {
+  box-shadow: 0 1px 1px 0 rgba(43, 26, 24, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.08);
+  border: solid 1px #ba0b15;
+  background-image: linear-gradient(to bottom, #e73c1e, #cf3014);
+  color: #ffffff;
+}
+
+.topbar .sections label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.topbar .sections label:hover {
+  /* background: #DDD; */
+}
+
+.topbar .counter-section {}
+.topbar .counter-section .counter-title {
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: #9ea0a5;
+}
+.topbar .counter-section .counter {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: right;
+  color: #ff902a;
+}
+
+.topbar .topbar-button {
+  width: 168px;
+  height: 38px;
+  font-family: "Blogger Sans";
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+  border: solid 1px #ff902a;
+  background-image: linear-gradient(to bottom, #ffa24a, #fe8806);
+  color: #fff;
+  cursor: pointer;
+}
+
+.topbar .topbar-button:target {
+  background-color: blue;
+}
+
+
+.advert {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.advert .left {
+  width: 336px;
+  height: 120px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  background-blend-mode: multiply;
+  background-image: linear-gradient(289deg, #6758f3, #e062f5);
+}
+
+.advert .right {
+  width: 1026px;
+  height: 120px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.sidebar {
+  font-family: 'Blogger Sans';
+  font-size: 14px;
+  font-weight: normal;
+  color: #9ea0a5;
+}
+
+.sidebar-filter {
+  width: 335px;
+  /* height: 100%; */
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px #eaedf3;
+  background-color: #ffffff;
+
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-filter input {
+  font-family: "Blogger Sans";
+  font-size: 14px;
+  font-weight: normal;
+  color: #9ea0a5;
+  margin-bottom: 30px;
+  padding: 8px 16px;
+}
+
+.sidebar-filter .search {
+  width: 295px;
+  height: 38px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
+  border: solid 1px #e2e5ed;
+  background-color: #ffffff;
+}
+
+.sidebar-filter .entry-fee {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.sidebar-filter .entry-fee .title {}
+
+.sidebar-filter .entry-fee input {
+  width: 130px;
+  height: 38px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
+  border: solid 1px #e2e5ed;
+  background-color: #ffffff;
+}
+
+/* ///////////// radio button sidebar /////////////// */
+
+.sidebar-filter .contest-style .radio-btns li {
+  width: 295px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.sidebar-filter .radio-btns {
+  display: flex;
+  list-style: none;
+}
+
+.sidebar-filter .radio-btns li {
+  width: 148px;
+  height: 38px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
+  border: solid 1px #e2e5ed;
+  background-color: #ffffff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sidebar-filter .radio-btns label, .sidebar-filter .radio-btns input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.sidebar-filter .radio-btns input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.sidebar-filter .radio-btns input[type="radio"]:checked + label,
+.Checked + label {
+  background-color: rgba(230, 73, 45, 0.2);
+  /* font-family: BloggerSans; */
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: #e6492d;
+}
+
+.sidebar-filter .radio-btns label {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar-filter .radio-btns label:hover {
+  background:#DDD;
+}
+
+
+.sidebar-filter .sidebar-text {
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  /* color: #6b6c6f; НЕ похож как в цеплин */
+}
+
+/* .sidebar-filter .sidebar-text:first-child { НЕ РАБОТАЕТ
+  margin-bottom: 18px;
+} */
+
+
+.sidebar-advert {
+  width: 335px;
+  height: 152px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  background-blend-mode: multiply;
+  background-image: linear-gradient(to left, #facf55, #f6ab2f);
+}
+
+/*  ////////////////////// TABLE ///////////////////// */
+
+table {
+  width: 1027px;
+  /* width: 100%; */
+  height: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  font-family: 'Blogger Sans';
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  /* padding: 0 20px 0 10px; */
+}
+
+table tr {
+  text-align: left;
+  border: solid 1px #eaedf3;
+}
+
+table tr:hover {
+  opacity: 0.6;
+  border: solid 2px #e6492d;
+  background-color: rgba(230, 73, 45, 0.1);
+}
+
+table th {
+  font-size: 12px;
+  font-weight: normal;
+  color: #9ea0a5;
+  padding: 15px 0;
+}
+
+table th:first-child {
+  text-align: center;
+}
+
+table td {
+  font-family: "Blogger Sans";
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  color: #3e3f42;
+  padding: 25px 0px;
+}
+
+table td:first-child, table td:last-child {
+  text-align: center;
+}
+
+table .tournament-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 15px;
+  background-color: lightgray;
+}
+
+/* table .tournament-icon::before {
+  content: "#";
+} */
+
+
+table .tournament-title {
+  font-family: "Blogger Sans";
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #3e3f42;
+}
+
+table .user {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  color: #9ea0a5;
+}
+
+table .prizes {
+  color: #34aa44;
+}
+
+table .grey-color {
+  color: #6b6c6f;
+}
+
+table .join-button {
+  width: 75px;
+  height: 38px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(43, 26, 24, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.08);
+  border: solid 1px #ba0b15;
+  background-image: linear-gradient(to bottom, #e73c1e, #cf3014);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+

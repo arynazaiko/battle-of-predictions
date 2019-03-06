@@ -27,14 +27,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
 }
 
 .right {
   display: flex;
   justify-content: space-between  ;
   align-items: center;
-  width: 40%;
 }
 
 .header {
@@ -269,6 +267,7 @@ body {
 }
 
 .sidebar {
+  margin-right: 20px;
   flex-basis: 335px;
   flex-grow: 0;
   flex-shrink: 0;
@@ -289,6 +288,15 @@ body {
   text-align: center;
   padding: 30px 20px;
   margin-bottom: 20px;
+}
+
+.sidebar-filter .filter-title {
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #9ea0a5;
+  text-transform: uppercase;
 }
 
 .sidebar-filter input {
@@ -327,7 +335,6 @@ body {
 }
 
 /* ///////////// radio button sidebar /////////////// */
-
 .radio-btns {
   display: flex;
   list-style: none;
@@ -358,11 +365,14 @@ body {
 
 .radio-btns label, .radio-btns input {
   display: block;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.radio-btns input {
+  position: absolute;
 }
 
 .radio-btns input[type="radio"] {
@@ -399,10 +409,9 @@ body {
   /* color: #6b6c6f; НЕ похож как в цеплин */
 }
 
-/* .sidebar-filter .sidebar-text:first-child { НЕ РАБОТАЕТ
+.sidebar-filter .sidebar-text > div:first-child {
   margin-bottom: 18px;
-} */
-
+}
 
 .sidebar-advert {
   width: 335px;
@@ -438,10 +447,20 @@ body {
   border: solid 1px #eaedf3;
 }
 
-.main-table table tr:hover {
+.main-table table tr:hover td {
   opacity: 0.6;
   border: solid 2px #e6492d;
+  border-left: none;
+  border-right: none;
   background-color: rgba(230, 73, 45, 0.1);
+}
+
+.main-table table tr:hover td:first-child {
+  border-left: 1px solid #e6492d;
+}
+
+.main-table table tr:hover td:last-child {
+  border-right: 1px solid #e6492d;
 }
 
 .main-table table th {
@@ -449,6 +468,7 @@ body {
   font-weight: normal;
   color: #9ea0a5;
   padding: 15px 0;
+  padding-right: 40px;
 }
 
 .main-table table th:first-child {
@@ -460,6 +480,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
+  text-align: left;
   color: #3e3f42;
   padding: 25px 0px;
 }
@@ -471,7 +492,7 @@ body {
 .main-table table .tournament-icon {
   width: 56px;
   height: 56px;
-  border-radius: 15px;
+  border-radius: 50%;
   background-color: lightgray;
 }
 

@@ -37,9 +37,9 @@ body {
 
 .header {
   height: 100%;
+  margin-bottom: 10px;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.06);
   background-color: #ffffff;
-  margin-bottom: 10px;
   font-size: 14px;
   padding: 10px 0;
 }
@@ -104,11 +104,6 @@ body {
   color: #6b6c6f;
 }
 
-/*
-.header .menu ul li a:active {
-  color: #e6492d;
-} */
-
 .header .deposit {
   margin-right: 20px;
   font-size: 26px;
@@ -161,10 +156,43 @@ body {
 .topbar {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   width: 100%;
+  height: 100%;
   margin-bottom: 20px;
-  /* background-color: white; */
+}
+
+.topbar .sections {
+  /* font-family: Roboto; */
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  color: #9ea0a5;
+}
+
+.topbar .show-other {
+  font-family: "Blogger Sans";
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #9ea0a5;
+}
+
+
+.topbar .counter-section {
+  margin-right: 20px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.topbar .counter-section .counter-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #9ea0a5;
+}
+
+.topbar .counter-section .counter {
+  font-size: 26px;
+  color: #ff902a;
 }
 
 .topbar .topbar-button {
@@ -180,11 +208,17 @@ body {
   cursor: pointer;
 }
 
+.topbar .topbar-button:not(:last-child) {
+  margin-right: 10px;
+}
+
 .advert {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
+/* /////////////////////// MAIN  ///////////////////////*/
 
 .main {
   display: flex;
@@ -210,19 +244,9 @@ body {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
   border: solid 1px #eaedf3;
   background-color: #ffffff;
-
   text-align: center;
   padding: 30px 20px;
   margin-bottom: 20px;
-}
-
-.sidebar-filter .filter-title {
-  margin-bottom: 8px;
-  text-align: left;
-  font-size: 12px;
-  font-weight: 500;
-  color: #9ea0a5;
-  text-transform: uppercase;
 }
 
 .sidebar-filter input {
@@ -260,6 +284,21 @@ body {
   background-color: #ffffff;
 }
 
+.sidebar .radio-btns li {
+  margin-bottom: 30px
+}
+
+.sidebar-filter .filter-title {
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #9ea0a5;
+  text-transform: uppercase;
+}
+
+
+
 /* ///////////// RADIO BUTTONS /////////////// */
 .radio-btns {
   display: flex;
@@ -270,14 +309,14 @@ body {
 
 .radio-btns li {
   flex-grow: 1;
-  height: 38px;
+  /* height: 38px; */
   box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
   border: solid 1px;
   border-color: #e2e5ed;
   border-left: none;
   background-color: #ffffff;
   position: relative;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; ПРОПИСАТЬ ДЛЯ ОТДЕЛЬНОГО КЛАССА СООТВ. РАЗДЕЛА */
 }
 
 .radio-btns li:first-child {
@@ -311,7 +350,7 @@ body {
 .radio-btns input[type="radio"]:checked + label,
 .Checked + label {
   background-color: rgba(230, 73, 45, 0.2);
-  /* font-family: BloggerSans; */
+  /* font-family: Roboto; */
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -324,17 +363,34 @@ body {
   cursor: pointer;
 }
 
-.radio-btns label:hover {
+/* .radio-btns label:hover {
   background:#DDD;
 }
 
+.radio-btns.radio-btns-spaced label:hover {
+  border-radius: 50px;
+  background:#DDD;
+} */
+
 .radio-btns.radio-btns-spaced li {
+  margin-right: 10px;
+  background-color: #fbfbfd;
   border-radius: 50px;
 }
 
-.radio-btns.radio-btns-spaced li:not(:last-child) {
-  margin-right: 10px;
+.radio-btns.radio-btns-spaced input[type="radio"]:checked + label,
+.Checked + label {
+  background-color: rgba(230, 73, 45, 0.2);
+  /* font-family: Roboto; */
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: #e6492d;
 }
+
+/* //////////////////// SIDEBAR //////////////////// */
 
 .sidebar-filter .sidebar-text {
   text-align: left;
@@ -351,9 +407,12 @@ body {
 .advert {
   height: 152px;
   border-radius: 4px;
+  /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  background-blend-mode: multiply;
+  background-image: linear-gradient(to left, #facf55, #f6ab2f); */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
   background-blend-mode: multiply;
-  background-image: linear-gradient(to left, #facf55, #f6ab2f);
+  background-image: linear-gradient(289deg, #6758f3, #e062f5);
 }
 
 /*  ////////////////////// TABLE ///////////////////// */

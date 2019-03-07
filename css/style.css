@@ -31,7 +31,7 @@ body {
 
 .right {
   display: flex;
-  justify-content: space-between  ;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -64,12 +64,14 @@ body {
 }
 
 .header .logo-text {
+  margin-right: 42px;
   font-size: 18px;
   font-weight: 500;
   color: #3e3f42;
 }
 
 .divider {
+  margin-right: 30px;
   border: 1px solid #eaedf3;
   height: 38px;
   /* background-color: gray; */
@@ -84,8 +86,12 @@ body {
 .header .menu ul li {
   display: inline-block;
   text-align: center;
-  width: 100px;
+  /* width: 100px; */
   color: #6b6c6f;
+}
+
+.header .menu ul li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .header .menu ul li.active a {
@@ -104,6 +110,7 @@ body {
 } */
 
 .header .deposit {
+  margin-right: 20px;
   font-size: 26px;
   font-weight: bold;
   color: #34aa44;
@@ -112,6 +119,7 @@ body {
 .header .add-deposit {
   width: 149px;
   height: 38px;
+  margin-right: 20px;
   font-family: 'Blogger Sans';
   font-size: 18px;
   border-radius: 8px;
@@ -127,13 +135,24 @@ body {
   height: 20px !important;
 }
 
+.header .message {
+  margin-right: 15px;
+}
+
+.header .notification {
+  margin-right: 30px;
+}
+
 .header .user-pic {
   width: 38px;
   height: 38px;
+  margin-right: 15px;
   background-color: brown;
   border-radius: 50%;
 }
+
 .header .user-name {
+  margin-right: 30px;
   font-size: 14px;
   font-weight: bold;
   color: #3e3f42;

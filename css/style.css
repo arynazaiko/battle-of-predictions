@@ -322,7 +322,7 @@ body {
 }
 
 .sidebar .radio-btns li {
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .sidebar-filter .sidebar-text {
@@ -335,6 +335,21 @@ body {
 
 .sidebar-filter .sidebar-text > div:first-child {
   margin-bottom: 18px;
+}
+
+.sidebar .sidebar-filter .radio-btns .available-soon:after {
+  content: 'Available soon';
+  display: inline-block;
+  position: absolute;
+  transform: rotate(-15deg);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  padding: 0 45px;
+  top: 5px;
+  left: -46px;
+  background: #9ea0a5;
+  color: white;
 }
 
 .advert {
@@ -359,6 +374,7 @@ body {
 .radio-btns li {
   flex-grow: 1;
   /* height: 38px; */
+  overflow: hidden;
   box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
   border: solid 1px;
   border-color: #e2e5ed;
@@ -463,6 +479,25 @@ body {
 
 .main-table table thead tr {
   height: 45px;
+}
+
+.main-table table tr.new td:first-child {
+  position: relative;
+}
+
+.main-table table tr.new td:first-child:after {
+  content: 'NEW';
+  display: inline-block;
+  position: absolute;
+  transform: rotate(-15deg);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  padding: 0 45px;
+  top: 2px;
+  left: -28px;
+  background: #e6492d;
+  color: white;
 }
 
 .main-table table tr:hover {
@@ -574,8 +609,7 @@ body {
   align-items: center;
   position: absolute;
   padding-right: 8px;
-
-  pointerev'i';ent-s: none;
+  pointer-events: none;
   background-color: white;
   width: 20px;
   right: 1px;
@@ -590,5 +624,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-

@@ -12,7 +12,6 @@
 <body>
     <div class="header">
       <div class="container">
-
         <div class="left">
           <div class="logo">
             <div class="logo-img"></div>
@@ -35,8 +34,16 @@
             <i class="fas fa-plus"></i> Add deposit
           </button>
           <div class="divider"></div>
-          <i class="far fa-comment message"></i>
-          <i class="far fa-bell notification"></i>
+          <div class="notifications">
+            <div>
+              <i class="far fa-comment"></i>
+              <div class="notifications-amount">11</div>
+            </div>
+            <div>
+              <i class="far fa-bell"></i>
+              <div class="notifications-amount">7</div>
+            </div>
+          </div>
           <span class="user-pic"></span>
           <span class="user-name">Alexander</span>
           <span class="arrows"><></span>
@@ -162,131 +169,146 @@
         <div class="main-table">
           <div class="advert"></div>
           <table>
-            <tr>
-              <th></th>
-              <th>CONTEST</th>
-              <th>TYPE</th>
-              <th>STYLE</th>
-              <th>ENTRY FEE</th>
-              <th>TOTAL PRIZES</th>
-              <th>ENTRIES</th>
-              <th>LIVE</th>
-              <th></th>
-            </tк>
+            <thead>
+              <tr>
+                <th></th>
+                <th>CONTEST</th>
+                <th>TYPE</th>
+                <th>STYLE</th>
+                <th>ENTRY FEE</th>
+                <th>TOTAL PRIZES</th>
+                <th>ENTRIES</th>
+                <th>LIVE</th>
+                <th></th>
+              </tr>
+            </thead>
 
-            <tr>
-              <td>
-                <div class="tournament-icon"></div>
-              </td>
-              <td>
-                <div class="tournament-title">
-                    BofP League: Australian Open I
-                </div>
-                <div class="user">
-                  Alina Znachitova
-                </div>
-              </td>
-              <td class="grey-color">Single</td>
-              <td class="grey-color">BofP</td>
-              <td>Free</td>
-              <td class="prizes">2.350.000</td>
-              <td>People</td>
-              <td class="grey-color">01:16:39</td>
-              <td>
-                <button class="join-button">JOIN</button>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="tournament-icon"></div>
-              </td>
-              <td>
-                <div class="tournament-title">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="tournament-icon"></div>
+                </td>
+                <td>
+                  <div class="tournament-title">
+                      BofP League: Australian Open I
+                  </div>
+                  <div class="user">
+                    Alina Znachitova
+                  </div>
+                </td>
+                <td class="grey-color">Single</td>
+                <td class="grey-color">BofP</td>
+                <td class="entry-fee">Free</td>
+                <td class="prizes">2.350.000</td>
+                <td>People</td>
+                <td class="grey-color">01:16:39</td>
+                <td>
+                  <button class="join-button">JOIN</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="tournament-icon"></div>
+                </td>
+                <td>
+                  <div class="tournament-title">
+                      BofP League: SportsMix II
+                  </div>
+                  <div class="user">
+                    Eugene Tkachev
+                  </div>
+                </td>
+                <td class="grey-color">Team</td>
+                <td class="grey-color">BofP</td>
+                <td class="entry-fee">Free</td>
+                <td class="prizes">7.000</td>
+                <td>People</td>
+                <td class="grey-color">Time</td>
+                <td>
+                  <button class="join-button">JOIN</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="tournament-icon"></div>
+                </td>
+                <td>
+                  <div class="tournament-title">
                     BofP League: SportsMix II
-                </div>
-                <div class="user">
-                  Eugene Tkachev
-                </div>
-              </td>
-              <td class="grey-color">Team</td>
-              <td class="grey-color">BofP</td>
-              <td>Free</td>
-              <td class="prizes">7.000</td>
-              <td>People</td>
-              <td class="grey-color">Time</td>
-              <td>
-                <button class="join-button">JOIN</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="tournament-icon"></div>
-              </td>
-              <td>
-                <div class="tournament-title">
-                  BofP League: SportsMix II
-                </div>
-                <div class="user">
-                  Eugene Tkachev
-                </div>
-              </td>
-              <td class="grey-color">Team</td>
-              <td class="grey-color">BofP</td>
-              <td>Free</td>
-              <td class="prizes">7.000</td>
-              <td>People</td>
-              <td class="grey-color">Time</td>
-              <td>
-                <button class="join-button">JOIN</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="tournament-icon"></div>
-              </td>
-              <td>
-                <div class="tournament-title">
-                  BofP League: SportsMix II
-                </div>
-                <div class="user">
-                  Eugene Tkachev
-                </div>
-              </td>
-              <td class="grey-color">Team</td>
-              <td class="grey-color">BofP</td>
-              <td>Free</td>
-              <td class="prizes">7.000</td>
-              <td>People</td>
-              <td class="grey-color">Time</td>
-              <td>
-                <button class="join-button">JOIN</button>
-              </td>
-            </tr>
+                  </div>
+                  <div class="user">
+                    Eugene Tkachev
+                  </div>
+                </td>
+                <td class="grey-color">Team</td>
+                <td class="grey-color">BofP</td>
+                <td class="entry-fee">Free</td>
+                <td class="prizes">7.000</td>
+                <td>People</td>
+                <td class="grey-color">Time</td>
+                <td>
+                  <button class="join-button">JOIN</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="tournament-icon"></div>
+                </td>
+                <td>
+                  <div class="tournament-title">
+                    BofP League: SportsMix II
+                  </div>
+                  <div class="user">
+                    Eugene Tkachev
+                  </div>
+                </td>
+                <td class="grey-color">Team</td>
+                <td class="grey-color">BofP</td>
+                <td class="entry-fee">Free</td>
+                <td class="prizes">7.000</td>
+                <td>People</td>
+                <td class="grey-color">Time</td>
+                <td>
+                  <button class="join-button">JOIN</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="tournament-icon"></div>
+                </td>
+                <td>
+                  <div class="tournament-title">
+                    BofP League: Australian Open I
+                  </div>
+                  <div class="user">
+                    Alina Znachitova
+                  </div>
+                </td>
+                <td class="grey-color">Single</td>
+                <td class="grey-color">BofP</td>
+                <td class="entry-fee">Free</td>
+                <td class="prizes">2.350.000</td>
+                <td>People</td>
+                <td class="grey-color">01:16:39</td>
+                <td>
+                  <button class="join-button">JOIN</button>
+                </td>
+              </tr>
 
-            <tr>
-              <td>
-                <div class="tournament-icon"></div>
-              </td>
-              <td>
-                <div class="tournament-title">
-                  BofP League: Australian Open I
-                </div>
-                <div class="user">
-                  Alina Znachitova
-                </div>
-              </td>
-              <td class="grey-color">Single</td>
-              <td class="grey-color">BofP</td>
-              <td>Free</td>
-              <td class="prizes">2.350.000</td>
-              <td>People</td>
-              <td class="grey-color">01:16:39</td>
-              <td>
-                <button class="join-button">JOIN</button>
-              </td>
-            </tr>
+            </tbody>
           </table>
+
+          <div class="table-controls">
+            <button type="button"> < </button>
+            <div class="page-select-wrapper">
+              <select name="page" id="#page">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <button type="button"> > </button>
+          </div>
         </div>
       </div>
   </div>

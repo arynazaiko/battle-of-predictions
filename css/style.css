@@ -19,8 +19,10 @@ body {
 
 .container {
   min-width: 1200px;
+  max-width: 1440px;
   /* width: 1140px; */
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .left {
@@ -130,12 +132,38 @@ body {
   height: 20px !important;
 }
 
-.header .message {
+.header .notifications {
+  margin-right: 30px;
+}
+
+.header .notifications > div {
+  position: relative;
+  display: inline-block;
   margin-right: 15px;
 }
 
-.header .notification {
-  margin-right: 30px;
+.header .notifications i {
+  color: #9ea0a5;
+  font-size: 20px;
+}
+
+.header .notifications .notifications-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: -50%;
+  right: -50%;
+  border-radius: 50%;
+  background-color: #e6492d;
+  color: white;
+}
+
+.header .notifications i:last-child {
+  margin-right: unset;
 }
 
 .header .user-pic {
@@ -242,7 +270,6 @@ body {
 
 .sidebar-filter {
   width: 100%;
-  /* height: 100%; */
   border-radius: 4px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
   border: solid 1px #eaedf3;
@@ -385,17 +412,9 @@ body {
 }
 
 .radio-btns.radio-btns-spaced label {
-  padding: 10px;
+  height: 100%;
+  padding: 5px 15px;
 }
-
-/* .radio-btns label:hover {
-  background:#DDD;
-}
-
-.radio-btns.radio-btns-spaced label:hover {
-  border-radius: 50px;
-  background:#DDD;
-} */
 
 .radio-btns.radio-btns-spaced li {
   margin-right: 10px;
@@ -423,7 +442,7 @@ body {
 }
 
 .main-table table {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   border-collapse: collapse;
   border-radius: 4px;
@@ -433,35 +452,28 @@ body {
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
-  /* padding: 0 20px 0 10px; */
+  /* padding: 0 20px 0 10px;   */
 }
 
 .main-table table tr {
   text-align: left;
   border: solid 1px #eaedf3;
+  height: 90px;
 }
 
-.main-table table tr:hover td {
-  opacity: 0.6;
-  border: solid 2px #e6492d;
-  border-left: none;
-  border-right: none;
-  background-color: rgba(230, 73, 45, 0.1);
+.main-table table thead tr {
+  height: 45px;
 }
 
-.main-table table tr:hover td:first-child {
-  border-left: 1px solid #e6492d;
-}
-
-.main-table table tr:hover td:last-child {
-  border-right: 1px solid #e6492d;
+.main-table table tr:hover {
+  border: double 1px #e6492d;
+  background-color: rgba(230, 73, 45, 0.05);
 }
 
 .main-table table th {
   font-size: 12px;
   font-weight: normal;
   color: #9ea0a5;
-  padding: 15px 0;
   padding-right: 40px;
 }
 
@@ -476,7 +488,7 @@ body {
   font-style: normal;
   text-align: left;
   color: #3e3f42;
-  padding: 25px 0px;
+  padding: 0px 5px;
 }
 
 .main-table table td:first-child, .main-table table td:last-child {
@@ -490,7 +502,7 @@ body {
   background-color: lightgray;
 }
 
-/* table .tournament-icon::before {
+/* .main-table table .tournament-icon::before {
   content: "#";
 } */
 
@@ -510,7 +522,17 @@ body {
   color: #9ea0a5;
 }
 
+.main-table table .entry-fee {
+  text-align: center;
+}
+
+
 .main-table table .prizes {
+  font-family: 'Blogger Sans';
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: right;
   color: #34aa44;
 }
 
@@ -529,6 +551,44 @@ body {
   cursor: pointer;
 }
 
+.main-table .table-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
 
+.main-table .table-controls select {
+  height: 40px;
+  width: 55px;
+  padding-left: 8px;
+}
+
+.main-table .table-controls .page-select-wrapper {
+  position: relative;
+}
+
+.main-table .table-controls .page-select-wrapper:after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-right: 8px;
+
+  pointerev'i';ent-s: none;
+  background-color: white;
+  width: 20px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+}
+
+.main-table .table-controls button {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 

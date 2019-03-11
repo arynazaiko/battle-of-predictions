@@ -4,12 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Battle of Predictions</title>
+  <title>My tournaments</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="header">
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <div class="logo-img">
+            <img src="img/v-1-01-01-2.png" alt="">
+          </div>
+          <div class="logo-text">Battle of predictions</div>
+        </div>
+        <div class="divider"></div>
 
+        <div class="menu">
+          <ul>
+            <li><a href="#">Tournaments</a></li>
+            <li class="active"><a href="#">My tournaments</a></li>
+            <li><a href="#">Leaderboard</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right">
+        <span class="deposit">1,290¢</span>
+        <button class="add-deposit">
+          <i class="fas fa-plus"></i> Add deposit
+        </button>
+        <div class="divider"></div>
+        <div class="notifications">
+          <div>
+            <i class="far fa-comment"></i>
+            <div class="notifications-amount">11</div>
+          </div>
+          <div>
+            <i class="far fa-bell"></i>
+            <div class="notifications-amount">7</div>
+          </div>
+        </div>
+        <span class="user-pic"></span>
+        <span class="user-name">Alexander</span>
+        <span class="arrows">
+          <i class="fas fa-sort-up"></i>
+          <i class="fas fa-sort-down"></i>
+        </span>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="main-table">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>CONTEST</th>
+            <th>TYPE</th>
+            <th>STYLE</th>
+            <th>MATCHES</th>
+            <th>MY PLACE</th>
+            <th>WINNING</th>
+            <th>ENTRIES</th>
+            <th>ENTRY FEE</th>
+            <th>TOP PRIZE</th>
+            <th>TRANSLATION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="tournament-icon"></div>
+            </td>
+            <td>
+              <div class="tournament-title">
+                  BofP League: Australian Open I
+              </div>
+              <div class="user">
+                Alina Znachitova
+              </div>
+            </td>
+            <td class="grey-color-text">Single</td>
+            <td class="grey-color-text">BofP</td>
+            <td>12/64</td>
+            <td>264</td>
+            <td>21,230</td>
+            <td>
+              <div class="entries">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div><span>341</span></div>
+              </div>
+            </td>
+            <td class="entry-fee">Free</td>
+            <td class="prizes">2.350.000</td>
+            <td>translation available</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="table-controls">
+        <button type="button">
+          <i class="fas fa-caret-left"></i>
+        </button>
+        <div class="page-select-wrapper">
+          <select name="page" id="page">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <button type="button">
+          <i class="fas fa-caret-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -243,6 +243,11 @@ body {
   margin-right: 10px;
 }
 
+.topbar .topbar-button i {
+  padding-right: 10px;
+}
+
+
 /* /////////////////////// MAIN  ///////////////////////*/
 
 .main {

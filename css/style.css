@@ -63,8 +63,6 @@ body {
 .header .logo-img {
   width: 30px;
   height: 30px;
-  background-color: red;
-  border-radius: 50%;
   margin-right: 5px;
 }
 
@@ -210,7 +208,6 @@ body {
   color: #9ea0a5;
   cursor: pointer;
 }
-
 
 .topbar .counter-section {
   margin-right: 20px;
@@ -576,7 +573,7 @@ body {
   width: 28px;
   height: 28px;
   margin-left: -12px;
-  background-color: green;
+  background-color: grey;
   border-radius: 50%;
 }
 
@@ -591,7 +588,7 @@ body {
   text-align: center;
 }
 
-.main-table table .grey-color {
+.main-table table .grey-color-text {
   color: #6b6c6f;
 }
 
@@ -611,12 +608,27 @@ body {
   justify-content: center;
   align-items: center;
   height: 90px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  border-right: solid 1px #eaedf3;
+  border-left: solid 1px #eaedf3;
+  border-bottom: solid 1px #eaedf3;
+  background-color: #ffffff;
 }
 
 .main-table .table-controls select {
   height: 40px;
   width: 55px;
   padding-left: 8px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 1px 0 0 #eaedf3;
+  font-family: 'Blogger Sans';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  color: #3e3f42;
+  border: solid 1px #eaedf3;
 }
 
 .main-table .table-controls .page-select-wrapper {
@@ -643,6 +655,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px #eaedf3;
+  /* border-radius: 4px; */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+}
+
+.main-table .table-controls button:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.main-table .table-controls button:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.main-table .table-controls button i {
+  width: 7px;
+  height: 8px;
+  color: #9ea0a5;
 }
 
 /* //////////////////////// GLOBAL //////////////////////// */
@@ -652,3 +684,34 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
+.guaranteed {
+  width: 80px;
+  height: 16px;
+  line-height: 1.16;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px 0 rgba(19, 31, 21, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+  border: solid 1px #2d9c3c;
+  background-image: linear-gradient(to top, #34aa44, #38b249);
+  text-align: center;
+  font-family: 'Blogger Sans';
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+/* нужна иконка потоньше */
+.guaranteed i {
+  width: 8px;
+  height: 6px;
+  margin-right: 4px;
+}
+
+/* .orange-color-text {
+  color: #ff902a;
+}
+
+.red-color-text {
+  color: #e6492d;
+} */

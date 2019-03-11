@@ -111,7 +111,6 @@ body {
   margin-right: 20px;
   font-size: 26px;
   font-weight: bold;
-  color: #34aa44;
 }
 
 .header .add-deposit {
@@ -564,7 +563,6 @@ body {
   font-weight: 500;
   font-style: normal;
   text-align: right;
-  color: #34aa44;
 }
 
 .main-table .entries {
@@ -713,10 +711,34 @@ body {
   margin-right: 4px;
 }
 
-/* .orange-color-text {
-  color: #ff902a;
+.orange-color-text {
+  color: #ff902a !important;
 }
 
 .red-color-text {
-  color: #e6492d;
-} */
+  color: #e6492d !important;
+}
+
+.green-color-text {
+  color: #34aa44 !important;
+}
+
+/* ////////////////////// MEDIA //////////////////////// */
+
+@media (max-width: 1260px) {
+  .header .logo-text {
+    margin-right: 20px;
+  }
+
+  .divider {
+    margin-right: 20px;
+  }
+
+  .radio-btns.radio-btns-spaced li {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 1222px) {
+
+}

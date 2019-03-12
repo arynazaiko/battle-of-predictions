@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>9275442D-4EF5-4A1D-B3EC-B8313CDA1942</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M20,18.586 L18.586,20 L12.929,14.343 L14.343,12.929 L20,18.586 Z M7,12 C4.243,12 2,9.757 2,7 C2,4.243 4.243,2 7,2 C9.757,2 12,4.243 12,7 C12,9.757 9.757,12 7,12 L7,12 Z M7,0 C3.134,0 0,3.134 0,7 C0,10.866 3.134,14 7,14 C10.866,14 14,10.866 14,7 C14,3.134 10.866,0 7,0 L7,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Input/Normal/Search-+-Placeholder" transform="translate(-118.000000, -9.000000)">
+            <g id="Input">
+                <g id="Icon/20px/search_left-[#1506]" transform="translate(118.000000, 9.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="search_left-[#1506]" fill-opacity="0" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="⚙️Atoms/Colour/Grey-Darker/3---50%" mask="url(#mask-2)" fill="#9EA0A5" fill-rule="evenodd" opacity="0.5">
+                        <g transform="translate(-1.000000, -1.000000)" id="Colour">
+                            <rect x="0" y="0" width="22" height="22"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

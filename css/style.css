@@ -252,27 +252,21 @@ body {
   cursor: pointer;
 }
 
-.topbar .topbar-button:not(:last-child) {
+.topbar .create-contest-button {
   margin-right: 10px;
-}
-
-.topbar .topbar-button:first-child {
   padding: 0 20.5px 0 10px;
 }
 
-.topbar .topbar-button:last-child {
+.topbar .create-contest-button img {
+  padding-right: 10.5px;
+}
+
+.topbar .create-lineup-button {
   padding: 0 25px 0 10px;
 }
-
-.topbar .topbar-button img {
-  padding-right: 10px;
-}
-
-.topbar .topbar-button:last-child img {
+.topbar .create-lineup-button img {
   padding-right: 15px;
 }
-
-
 
 /* /////////////////////// MAIN  ///////////////////////*/
 
@@ -458,7 +452,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 5px 15px;
+  padding: 4px 15px;
 }
 
 .radio-btns.radio-btns-spaced li {
@@ -512,6 +506,7 @@ body {
 
 .main-table table tr.new td:first-child {
   position: relative;
+  overflow: hidden;
 }
 
 .main-table table tr.new td:first-child:after {
@@ -529,7 +524,7 @@ body {
   color: white;
 }
 
-.main-table table tr:hover {
+.main-table table tbody tr:hover {
   border: double 1px #e6492d;
   background-color: rgba(230, 73, 45, 0.05);
 }
@@ -680,6 +675,7 @@ body {
   font-style: normal;
   color: #3e3f42;
   border: solid 1px #eaedf3;
+  cursor: pointer;
 }
 
 .main-table .table-controls .page-select-wrapper {
@@ -710,6 +706,7 @@ body {
   border: solid 1px #eaedf3;
   /* border-radius: 4px; */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  cursor: pointer;
 }
 
 .main-table .table-controls button:first-child {
@@ -742,7 +739,6 @@ body {
 .guaranteed {
   /* width: 80px; */
   height: 16px;
-  line-height: 1.16;
   border-radius: 8px;
   box-shadow: 0 1px 1px 0 rgba(19, 31, 21, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
   border: solid 1px #2d9c3c;

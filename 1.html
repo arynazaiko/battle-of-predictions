@@ -10,428 +10,427 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">
-      <div class="container">
-        <div class="left">
-          <div class="logo">
-            <div class="logo-img">
-              <img src="img/logo-img.png" alt="">
-            </div>
-            <div class="logo-text">Battle of predictions</div>
+  <div class="header">
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <div class="logo-img">
+            <img src="img/logo-img.png" alt="">
           </div>
-          <div class="divider"></div>
-          <div class="menu">
-            <ul>
-              <li class="active"><a href="#">Tournaments</a></li>
-              <li><a href="#">My tournaments</a></li>
-              <li><a href="#">Leaderboard</a></li>
-            </ul>
+          <div class="logo-text">Battle of predictions</div>
+        </div>
+        <div class="divider"></div>
+        <div class="menu">
+          <ul>
+            <li class="active"><a href="#">Tournaments</a></li>
+            <li><a href="#">My tournaments</a></li>
+            <li><a href="#">Leaderboard</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <span class="deposit green-color-text">1,290¢</span>
+        <button class="add-deposit">
+          <img src="img/plus.svg" alt="">
+          <span>Add deposit</span>
+        </button>
+        <div class="divider"></div>
+        <div class="notifications">
+          <div>
+            <img src="img/notification-message.svg" alt="">
+            <div class="notifications-amount">11</div>
+          </div>
+          <div>
+            <img src="img/notification-bell.svg" alt="">
+            <div class="notifications-amount">7</div>
           </div>
         </div>
-        <div class="right">
-          <span class="deposit green-color-text">1,290¢</span>
-          <button class="add-deposit">
-            <img src="img/plus.svg" alt="">
-            <span>Add deposit</span>
-          </button>
-          <div class="divider"></div>
-          <div class="notifications">
-            <div>
-              <img src="img/notification-message.svg" alt="">
-              <div class="notifications-amount">11</div>
-            </div>
-            <div>
-              <img src="img/notification-bell.svg" alt="">
-              <div class="notifications-amount">7</div>
-            </div>
+        <span class="user-pic"></span>
+        <span class="user-name">Alexander</span>
+        <img class="dropdown-arrow" src="img/dropdown-arrow.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!--////////////////////// TOPBAR ///////////////////// -->
+    <div class="topbar">
+      <div class="left">
+        <ul class="sections radio-btns radio-btns-spaced">
+          <li>
+            <input type="radio" id="all" name="section" checked="checked" />
+            <label for="all">All</label>
+          </li>
+          <li>
+            <input type="radio" id="featured" name="section" />
+            <label for="featured">
+              <img src="img/star-favorite.svg" alt="">
+              <span>Featured</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="football" name="section" />
+            <label for="football">Football</label>
+          </li>
+          <li>
+            <input type="radio" id="basketball" name="section" />
+            <label for="basketball">Basketball</label>
+          </li>
+          <li>
+            <input type="radio" id="hockey" name="section" />
+            <label for="hockey">Hockey</label>
+          </li>
+          <li>
+            <input type="radio" id="tennis" name="section" />
+            <label for="tennis">Tennis</label>
+          </li>
+        </ul>
+        <div class="show-other">Show other 14</div>
+      </div>
+      <div class="right">
+        <div class="counter-section">
+          <div class="counter-title">
+            next tournament starts in
           </div>
-          <span class="user-pic"></span>
-          <span class="user-name">Alexander</span>
-          <img class="dropdown-arrow" src="img/dropdown-arrow.svg" alt="">
+          <div class="counter">
+            8:27:13
+          </div>
+        </div>
+        <div class="divider"></div>
+        <button class="topbar-button create-contest-button">
+          <img src="img/user.svg" alt="">
+          <span>Create contest</span>
+        </button>
+        <button class="topbar-button create-lineup-button">
+          <img src="img/brick.svg" alt="">
+          <span>Create lineup</span>
+        </button>
+      </div>
+    </div>
+    <div class="main">
+      <!-- /////////////// SIDEBAR //////////////// -->
+      <div class="sidebar">
+        <div class="advert">
+          <img src="img/widget1.png" alt="">
+        </div>
+        <div class="sidebar-filter">
+          <input class="search" type="text" placeholder="Search tournament">
+          <!-- <i class="fas fa-search search-icon"></i> -->
+          <div class="filter-title">Entry fee</div>
+          <div class="entry-fee">
+            <input type="text" placeholder="From">
+            <span>-</span>
+            <input type="text" placeholder="To">
+          </div>
+          <div class="filter-title">Predictions mode</div>
+          <div class="predictions-mode">
+            <ul class="radio-btns">
+              <li>
+                <input type="radio" id="games" name="predictions-mode" checked="checked" />
+                <label for="games">Games</label>
+              </li>
+              <li>
+                <input type="radio" id="players" name="predictions-mode" />
+                <label for="players" class="available-soon">Players</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-title">Contest type</div>
+          <div class="contest-type">
+            <ul class="radio-btns">
+              <li>
+                <input type="radio" id="contest-type-all" name="contest-type" checked="checked" />
+                <label for="contest-type-all">All</label>
+              </li>
+              <li>
+                <input type="radio" id="single" name="contest-type" />
+                <label for="single">Single</label>
+              </li>
+              <li>
+                <input type="radio" id="team" name="contest-type" />
+                <label for="team">Team</label>
+              </li>
+            </ul>
+          </div>
+          <div class="contest-style">
+            <div class="filter-title">Contest style</div>
+            <ul class="radio-btns">
+              <li>
+                <input type="radio" id="all" name="contest-style" checked="checked" />
+                <label for="all">All</label>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-text">
+            <div>Head to head</div>
+            <div>50/50 & double ups</div>
+          </div>
+        </div>
+        <div class="advert">
+          <img src="img/widget3.png" alt="">
+        </div>
+      </div>
+      <!-- /////////////// TABLE ////////////////// -->
+      <div class="main-table">
+        <div class="advert">
+          <img src="img/widget2.png" alt="">
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>CONTEST</th>
+              <th>TYPE</th>
+              <th>STYLE</th>
+              <th>ENTRY FEE</th>
+              <th>TOTAL PRIZES</th>
+              <th>ENTRIES</th>
+              <th>LIVE</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="new">
+              <td>
+                <div class="tournament-icon"></div>
+              </td>
+              <td>
+                <div class="tournament-title">
+                    BofP League: Australian Open I
+                </div>
+                <div class="user">
+                  Alina Znachitova
+                </div>
+              </td>
+              <td class="grey-color-text">Single</td>
+              <td class="grey-color-text">BofP</td>
+              <td class="entry-fee">Free</td>
+              <td class="prizes green-color-text">
+                <div>2.350.000</div>
+                <div class="guaranteed">
+                  <!-- <i class="fas fa-check"></i> -->
+                  <span>Guaranteed</span>
+                </div>
+              </td>
+              <td>
+                <div class="entries">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div><span>341</span></div>
+                </div>
+              </td>
+              <td class="orange-color-text">01:16:39</td>
+              <td class="join-button-position">
+                <button class="join-button">JOIN</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="tournament-icon"></div>
+              </td>
+              <td>
+                <div class="tournament-title">
+                  BofP League: SportsMix II
+                </div>
+                <div class="user">
+                  Eugene Tkachev
+                </div>
+              </td>
+              <td class="grey-color-text">Team</td>
+              <td class="grey-color-text">BofP</td>
+              <td class="entry-fee">Free</td>
+              <td class="prizes  green-color-text">1.200.000</td>
+              <td>
+                <div class="entries">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div><span>28</span></div>
+                </div>
+              </td>
+              <td class="orange-color-text">01:05:04</td>
+              <td class="join-button-position">
+                <button class="join-button">JOIN</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="tournament-icon"></div>
+              </td>
+              <td>
+                <div class="tournament-title">
+                  BofP Superexpress IX
+                </div>
+                <div class="user">
+                  Ivan Arhipkin
+                </div>
+              </td>
+              <td class="grey-color-text">Single</td>
+              <td class="grey-color-text">BofP</td>
+              <td class="entry-fee">Free</td>
+              <td class="prizes green-color-text">7.000</td>
+              <td>
+                <div class="entries">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div><span>521</span></div>
+                </div>
+              </td>
+              <td class="red-color-text">00:34:38</td>
+              <td class="join-button-position">
+                <button class="join-button">JOIN</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="tournament-icon"></div>
+              </td>
+              <td>
+                <div class="tournament-title">
+                  FFB
+                </div>
+                <div class="user">
+                  Dima Dima
+                </div>
+              </td>
+              <td class="grey-color-text">Team</td>
+              <td class="grey-color-text">Double ups</td>
+              <td class="entry-fee">20.000</td>
+              <td class="prizes green-color-text">240.000</td>
+              <td>
+                <div class="entries">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div><span>36</span></div>
+                </div>
+              </td>
+              <td class="grey-color-text">10:48:18</td>
+              <td class="join-button-position">
+                <button class="join-button">JOIN</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="tournament-icon"></div>
+              </td>
+              <td>
+                <div class="tournament-title">
+                  BofP League: Top of the world IV
+                </div>
+                <div class="user">
+                  Yanina Limonova
+                </div>
+              </td>
+              <td class="grey-color-text">Single</td>
+              <td class="grey-color-text">BofP</td>
+              <td class="entry-fee">Free</td>
+              <td class="prizes green-color-text">
+                <div>450.000</div>
+                <div class="guaranteed">
+                  <i class="fas fa-check"></i>
+                  Guaranteed
+                </div>
+              </td>
+              <td>
+                <div class="entries">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div><span>3</span></div>
+                </div>
+              </td>
+              <td class="orange-color-text">01:43:28</td>
+              <td class="join-button-position">
+                <button class="join-button">JOIN</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="tournament-icon"></div>
+              </td>
+              <td>
+                <div class="tournament-title">
+                  Daily English Football 8
+                </div>
+                <div class="user">
+                  Павел Пискунов
+                </div>
+              </td>
+              <td class="grey-color-text">Single</td>
+              <td class="grey-color-text">H2H</td>
+              <td class="entry-fee">12.500</td>
+              <td class="prizes green-color-text">25.500</td>
+              <td>
+                <div class="entries">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div><span>341</span></div>
+                </div>
+              </td>
+              <td class="grey-color-text">08:14:01</td>
+              <td class="join-button-position">
+                <button class="join-button">JOIN</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="tournament-icon"></div>
+              </td>
+              <td>
+                <div class="tournament-title">
+                  Fight Nights 3: Moscow octagon
+                </div>
+                <div class="user">
+                  Pabloo Escobar
+                </div>
+              </td>
+              <td class="grey-color-text">Single</td>
+              <td class="grey-color-text">50/50</td>
+              <td class="entry-fee">500</td>
+              <td class="prizes green-color-text">1.500</td>
+              <td>
+                <div class="entries">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div><span>341</span></div>
+                </div>
+              </td>
+              <td class="grey-color-text">05:24:10</td>
+              <td class="join-button-position">
+                <button class="join-button">JOIN</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-controls">
+          <button type="button">
+            <img src="img/pagination-arrow-left.svg" alt="">
+          </button>
+          <div class="page-select-wrapper">
+            <select name="page" id="page">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <button type="button">
+            <img src="img/pagination-arrow-right.svg" alt="">
+          </button>
         </div>
       </div>
     </div>
-    <div class="container">
-      <!--////////////////////// TOPBAR ///////////////////// -->
-      <div class="topbar">
-        <div class="left">
-          <ul class="sections radio-btns radio-btns-spaced">
-            <li>
-              <input type="radio" id="all" name="section" checked="checked" />
-              <label for="all">All</label>
-            </li>
-            <li>
-              <input type="radio" id="featured" name="section" />
-              <label for="featured">
-                <img src="img/star-favorite.svg" alt="">
-                <span>Featured</span>
-              </label>
-            </li>
-            <li>
-              <input type="radio" id="football" name="section" />
-              <label for="football">Football</label>
-            </li>
-            <li>
-              <input type="radio" id="basketball" name="section" />
-              <label for="basketball">Basketball</label>
-            </li>
-            <li>
-              <input type="radio" id="hockey" name="section" />
-              <label for="hockey">Hockey</label>
-            </li>
-            <li>
-              <input type="radio" id="tennis" name="section" />
-              <label for="tennis">Tennis</label>
-            </li>
-          </ul>
-          <div class="show-other">Show other 14</div>
-        </div>
-        <div class="right">
-          <div class="counter-section">
-            <div class="counter-title">
-              next tournament starts in
-            </div>
-            <div class="counter">
-              8:27:13
-            </div>
-          </div>
-          <div class="divider"></div>
-          <button class="topbar-button">
-            <img src="img/user.svg" alt="">
-            <span>Create contest</span>
-          </button>
-          <button class="topbar-button">
-            <img src="img/brick.svg" alt="">
-            <span>Create lineup</span>
-          </button>
-        </div>
-      </div>
-      <div class="main">
-        <!-- /////////////// SIDEBAR //////////////// -->
-        <div class="sidebar">
-          <div class="advert">
-            <img src="img/widget1.png" alt="">
-          </div>
-          <div class="sidebar-filter">
-            <input class="search" type="text" placeholder="Search tournament">
-            <!-- <i class="fas fa-search search-icon"></i> -->
-            <div class="filter-title">Entry fee</div>
-            <div class="entry-fee">
-              <input type="text" placeholder="From">
-              <span>-</span>
-              <input type="text" placeholder="To">
-            </div>
-            <div class="filter-title">Predictions mode</div>
-            <div class="predictions-mode">
-              <ul class="radio-btns">
-                <li>
-                  <input type="radio" id="games" name="predictions-mode" checked="checked" />
-                  <label for="games">Games</label>
-                </li>
-                <li>
-                  <input type="radio" id="players" name="predictions-mode" />
-                  <label for="players" class="available-soon">Players</label>
-                </li>
-              </ul>
-            </div>
-            <div class="filter-title">Contest type</div>
-            <div class="contest-type">
-              <ul class="radio-btns">
-                <li>
-                  <input type="radio" id="contest-type-all" name="contest-type" checked="checked" />
-                  <label for="contest-type-all">All</label>
-                </li>
-                <li>
-                  <input type="radio" id="single" name="contest-type" />
-                  <label for="single">Single</label>
-                </li>
-                <li>
-                  <input type="radio" id="team" name="contest-type" />
-                  <label for="team">Team</label>
-                </li>
-              </ul>
-            </div>
-            <div class="contest-style">
-              <div class="filter-title">Contest style</div>
-              <ul class="radio-btns">
-                <li>
-                  <input type="radio" id="all" name="contest-style" checked="checked" />
-                  <label for="all">All</label>
-                </li>
-              </ul>
-            </div>
-            <div class="sidebar-text">
-              <div>Head to head</div>
-              <div>50/50 & double ups</div>
-            </div>
-          </div>
-          <div class="advert">
-            <img src="img/widget3.png" alt="">
-          </div>
-        </div>
-        <!-- /////////////// TABLE ////////////////// -->
-        <div class="main-table">
-          <div class="advert">
-            <img src="img/widget2.png" alt="">
-          </div>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>CONTEST</th>
-                <th>TYPE</th>
-                <th>STYLE</th>
-                <th>ENTRY FEE</th>
-                <th>TOTAL PRIZES</th>
-                <th>ENTRIES</th>
-                <th>LIVE</th>
-                <th></th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr class="new">
-                <td>
-                  <div class="tournament-icon"></div>
-                </td>
-                <td>
-                  <div class="tournament-title">
-                      BofP League: Australian Open I
-                  </div>
-                  <div class="user">
-                    Alina Znachitova
-                  </div>
-                </td>
-                <td class="grey-color-text">Single</td>
-                <td class="grey-color-text">BofP</td>
-                <td class="entry-fee">Free</td>
-                <td class="prizes green-color-text">
-                  <div>2.350.000</div>
-                  <div class="guaranteed">
-                    <i class="fas fa-check"></i>
-                    Guaranteed
-                  </div>
-                </td>
-                <td>
-                  <div class="entries">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div><span>341</span></div>
-                  </div>
-                </td>
-                <td class="orange-color-text">01:16:39</td>
-                <td class="join-button-position">
-                  <button class="join-button">JOIN</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tournament-icon"></div>
-                </td>
-                <td>
-                  <div class="tournament-title">
-                    BofP League: SportsMix II
-                  </div>
-                  <div class="user">
-                    Eugene Tkachev
-                  </div>
-                </td>
-                <td class="grey-color-text">Team</td>
-                <td class="grey-color-text">BofP</td>
-                <td class="entry-fee">Free</td>
-                <td class="prizes  green-color-text">1.200.000</td>
-                <td>
-                  <div class="entries">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div><span>28</span></div>
-                  </div>
-                </td>
-                <td class="orange-color-text">01:05:04</td>
-                <td class="join-button-position">
-                  <button class="join-button">JOIN</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tournament-icon"></div>
-                </td>
-                <td>
-                  <div class="tournament-title">
-                    BofP Superexpress IX
-                  </div>
-                  <div class="user">
-                    Ivan Arhipkin
-                  </div>
-                </td>
-                <td class="grey-color-text">Single</td>
-                <td class="grey-color-text">BofP</td>
-                <td class="entry-fee">Free</td>
-                <td class="prizes green-color-text">7.000</td>
-                <td>
-                  <div class="entries">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div><span>521</span></div>
-                  </div>
-                </td>
-                <td class="red-color-text">00:34:38</td>
-                <td class="join-button-position">
-                  <button class="join-button">JOIN</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tournament-icon"></div>
-                </td>
-                <td>
-                  <div class="tournament-title">
-                    FFB
-                  </div>
-                  <div class="user">
-                    Dima Dima
-                  </div>
-                </td>
-                <td class="grey-color-text">Team</td>
-                <td class="grey-color-text">Double ups</td>
-                <td class="entry-fee">20.000</td>
-                <td class="prizes green-color-text">240.000</td>
-                <td>
-                  <div class="entries">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div><span>36</span></div>
-                  </div>
-                </td>
-                <td class="grey-color-text">10:48:18</td>
-                <td class="join-button-position">
-                  <button class="join-button">JOIN</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tournament-icon"></div>
-                </td>
-                <td>
-                  <div class="tournament-title">
-                    BofP League: Top of the world IV
-                  </div>
-                  <div class="user">
-                    Yanina Limonova
-                  </div>
-                </td>
-                <td class="grey-color-text">Single</td>
-                <td class="grey-color-text">BofP</td>
-                <td class="entry-fee">Free</td>
-                <td class="prizes green-color-text">
-                  <div>450.000</div>
-                  <div class="guaranteed">
-                    <i class="fas fa-check"></i>
-                    Guaranteed
-                  </div>
-                </td>
-                <td>
-                  <div class="entries">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div><span>3</span></div>
-                  </div>
-                </td>
-                <td class="orange-color-text">01:43:28</td>
-                <td class="join-button-position">
-                  <button class="join-button">JOIN</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tournament-icon"></div>
-                </td>
-                <td>
-                  <div class="tournament-title">
-                    Daily English Football 8
-                  </div>
-                  <div class="user">
-                    Павел Пискунов
-                  </div>
-                </td>
-                <td class="grey-color-text">Single</td>
-                <td class="grey-color-text">H2H</td>
-                <td class="entry-fee">12.500</td>
-                <td class="prizes green-color-text">25.500</td>
-                <td>
-                  <div class="entries">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div><span>341</span></div>
-                  </div>
-                </td>
-                <td class="grey-color-text">08:14:01</td>
-                <td class="join-button-position">
-                  <button class="join-button">JOIN</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tournament-icon"></div>
-                </td>
-                <td>
-                  <div class="tournament-title">
-                    Fight Nights 3: Moscow octagon
-                  </div>
-                  <div class="user">
-                    Pabloo Escobar
-                  </div>
-                </td>
-                <td class="grey-color-text">Single</td>
-                <td class="grey-color-text">50/50</td>
-                <td class="entry-fee">500</td>
-                <td class="prizes green-color-text">1.500</td>
-                <td>
-                  <div class="entries">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div><span>341</span></div>
-                  </div>
-                </td>
-                <td class="grey-color-text">05:24:10</td>
-                <td class="join-button-position">
-                  <button class="join-button">JOIN</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="table-controls">
-            <button type="button">
-              <img src="img/pagination-arrow-left.svg" alt="">
-            </button>
-            <div class="page-select-wrapper">
-              <select name="page" id="page">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </div>
-            <button type="button">
-              <img src="img/pagination-arrow-right.svg" alt="">
-            </button>
-          </div>
-        </div>
-      </div>
   </div>
-
 </body>
 </html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>EE83F00B-716A-4924-A1E0-A2F66874C842</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M16.720351,12.206 C16.293351,12.639 16.099351,13.263 16.199351,13.875 L16.844351,17.791 C17.045351,19.01 16.115351,20 15.060351,20 C14.782351,20 14.495351,19.931 14.217351,19.779 L10.842351,17.93 C10.578351,17.786 10.289351,17.714 9.99935101,17.714 C9.71035101,17.714 9.42135101,17.786 9.15735101,17.93 L5.78235101,19.779 C5.50435101,19.931 5.21735101,20 4.93935101,20 C3.88435101,20 2.95435101,19.01 3.15535101,17.791 L3.80035101,13.875 C3.90035101,13.263 3.70635101,12.639 3.27935101,12.206 L0.548351008,9.433 C-0.525648992,8.342 0.067351008,6.441 1.55135101,6.216 L5.32535101,5.645 C5.91535101,5.556 6.42535101,5.17 6.68835101,4.613 L8.37635101,1.051 C8.70835101,0.35 9.35435101,0 9.99935101,0 C10.645351,0 11.291351,0.35 11.623351,1.051 L13.311351,4.613 C13.574351,5.17 14.084351,5.556 14.674351,5.645 L18.448351,6.216 C19.932351,6.441 20.525351,8.342 19.451351,9.433 L16.720351,12.206 Z" id="path-1"></path>
+    </defs>
+    <g id="Battle-of-Predictions-/-DraftKings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BofP-01-—-Tournaments-01" transform="translate(-98.000000, -94.000000)">
+            <g id="Tags" transform="translate(30.000000, 90.000000)">
+                <g id="Icon/20px/star_favorite-[#1499]" transform="translate(67.925926, 4.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="star_favorite-[#1499]" fill-opacity="0" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="⚙️Atoms/Colour/Yellow/1---100%" mask="url(#mask-2)" fill="#FACF55" fill-rule="evenodd">
+                        <g transform="translate(-1.000000, -1.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="22" height="22"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

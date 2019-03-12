@@ -20,8 +20,8 @@ body {
 
 .container {
   /* min-width: 1200px; */
-  max-width: 1440px;
   /* width: 1140px; */
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -114,8 +114,10 @@ body {
 }
 
 .header .add-deposit {
-  width: 149px;
   height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 10px;
   margin-right: 20px;
   font-family: 'Blogger Sans';
   font-size: 18px;
@@ -127,9 +129,10 @@ body {
   cursor: pointer;
 }
 
-.header .add-deposit i {
-  width: 20px !important;
-  height: 20px !important;
+.header .add-deposit img {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
 }
 
 .header .notifications {
@@ -142,7 +145,7 @@ body {
   margin-right: 15px;
 }
 
-.header .notifications i {
+.header .notifications img {
   color: #9ea0a5;
   font-size: 20px;
 }
@@ -162,7 +165,7 @@ body {
   color: white;
 }
 
-.header .notifications i:last-child {
+.header .notifications img:last-child {
   margin-right: unset;
 }
 
@@ -181,22 +184,12 @@ body {
   color: #3e3f42;
 }
 
-.header .arrows {
-  position: relative;
-}
-
-.header .arrows i {
+.header .dropdown-arrow {
   width: 6px;
   height: 10px;
-  color: #9ea0a5
 }
 
-.header .arrows i:last-child {
-  position: absolute;
-  top: 30%;
-}
-
-/* //////////////////////// HEADER //////////////////////// */
+/* //////////////////////// TOPBAR //////////////////////// */
 
 .topbar {
   display: flex;
@@ -212,6 +205,10 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #9ea0a5;
+}
+
+.topbar .sections li label img {
+  margin-right: 5px;
 }
 
 .topbar .show-other {
@@ -241,8 +238,10 @@ body {
 }
 
 .topbar .topbar-button {
-  width: 168px;
+  /* width: 168px; */
   height: 38px;
+  display: flex;
+  align-items: center;
   font-family: "Blogger Sans";
   font-size: 18px;
   border-radius: 8px;
@@ -257,9 +256,22 @@ body {
   margin-right: 10px;
 }
 
-.topbar .topbar-button i {
+.topbar .topbar-button:first-child {
+  padding: 0 20.5px 0 10px;
+}
+
+.topbar .topbar-button:last-child {
+  padding: 0 25px 0 10px;
+}
+
+.topbar .topbar-button img {
   padding-right: 10px;
 }
+
+.topbar .topbar-button:last-child img {
+  padding-right: 15px;
+}
+
 
 
 /* /////////////////////// MAIN  ///////////////////////*/
@@ -368,14 +380,14 @@ body {
 }
 
 .advert {
-  height: 152px;
-  border-radius: 4px;
+  /* height: 152px; */
+  /* border-radius: 4px; */
   /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
   background-blend-mode: multiply;
   background-image: linear-gradient(to left, #facf55, #f6ab2f); */
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
-  background-blend-mode: multiply;
-  background-image: linear-gradient(289deg, #6758f3, #e062f5);
+  /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04); */
+  /* background-blend-mode: multiply; */
+  /* background-image: linear-gradient(289deg, #6758f3, #e062f5); */
 }
 
 /* ///////////// RADIO BUTTONS /////////////// */
@@ -444,6 +456,8 @@ body {
 
 .radio-btns.radio-btns-spaced label {
   height: 100%;
+  display: flex;
+  align-items: center;
   padding: 5px 15px;
 }
 
@@ -550,9 +564,11 @@ body {
 
 .main-table table .tournament-icon img {}
 
-/* .main-table table .tournament-icon::before {
-  content: '$';
-} */
+.main-table table .tournament-icon::before {
+  content: url('../img/star-favorite.svg');
+  width: 12px;
+  height: 12px;
+}
 
 .main-table table .tournament-title {
   font-family: "Blogger Sans";
@@ -706,10 +722,13 @@ body {
   border-bottom-right-radius: 4px;
 }
 
-.main-table .table-controls button i {
-  width: 7px;
-  height: 8px;
-  color: #9ea0a5;
+.main-table .table-controls button img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-table .table-controls button:first-child img {
+  transform: rotateY(180deg);
 }
 
 /* //////////////////////// GLOBAL //////////////////////// */

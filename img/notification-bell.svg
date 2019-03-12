@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>B15D6828-DB65-4ADE-A5A0-C579B6287C58</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M14,14 L6,14 L6,8 C6,5.334 8,4 9.999,4 L10.001,4 C12,4 14,5.334 14,8 L14,14 Z M11,17 C11,17.552 10.552,18 10,18 C9.448,18 9,17.552 9,17 L9,16 L11,16 L11,17 Z M17,14 L16,14 L16,8 C16,4.447 13.632,2.475 11,2.079 L11,0 L9,0 L9,2.079 C6.368,2.475 4,4.447 4,8 L4,14 L3,14 C2.448,14 2,14.448 2,15 C2,15.552 2.448,16 3,16 L7,16 L7,17 C7,18.657 8.343,20 10,20 C11.657,20 13,18.657 13,17 L13,16 L17,16 C17.552,16 18,15.552 18,15 C18,14.448 17.552,14 17,14 L17,14 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/20px/notification_bell-[#1398]">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="notification_bell-[#1398]" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <g id="⚙️Atoms/Colour/Grey-Darker/1---100%" mask="url(#mask-2)" fill="#9EA0A5">
+                <g transform="translate(-1.000000, -1.000000)" id="Colour">
+                    <rect x="0" y="0" width="22" height="22"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

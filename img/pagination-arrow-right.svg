@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>C6AF0864-4B43-469C-8E8B-6197A4DC9C2B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="7 6 7 14 14 10"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/20px/pagination_arrow_right-[Extra]">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="play-[#1001]" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <g id="⚙️Atoms/Colour/Grey-Darker/1---100%" mask="url(#mask-2)" fill="#9EA0A5">
+                <g transform="translate(-1.000000, -1.000000)" id="Colour">
+                    <rect x="0" y="0" width="22" height="22"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

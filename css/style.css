@@ -626,7 +626,17 @@ body {
   cursor: pointer;
 }
 
-.main-table table .translation {}
+.main-table table .translation div{
+  width: 114px;
+  height: 35px;
+  border-radius: 8px;
+  border: solid 1px #e6492d;
+  font-family: 'Blogger Sans';
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  color: #e6492d;
+}
 
 .main-table .table-controls {
   display: flex;
@@ -711,6 +721,7 @@ body {
 }
 
 .guaranteed {
+  /* width: 80px; */
   height: 16px;
   line-height: 1.16;
   border-radius: 8px;

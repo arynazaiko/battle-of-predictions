@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  min-width: 1200px;
+  /* min-width: 1200px; */
   max-width: 1440px;
   /* width: 1140px; */
   margin: 0 auto;
@@ -179,6 +179,21 @@ body {
   font-size: 14px;
   font-weight: bold;
   color: #3e3f42;
+}
+
+.header .arrows {
+  position: relative;
+}
+
+.header .arrows i {
+  width: 6px;
+  height: 10px;
+  color: #9ea0a5
+}
+
+.header .arrows i:last-child {
+  position: absolute;
+  top: 30%;
 }
 
 /* //////////////////////// HEADER //////////////////////// */
@@ -526,16 +541,18 @@ body {
   padding: 0px 10px 0 0;
 }
 
-.main-table table td:first-child, .main-table table td:last-child {
-  text-align: center;
-}
-
 .main-table table .tournament-icon {
   width: 56px;
   height: 56px;
   border-radius: 50%;
   background-color: lightgray;
 }
+
+.main-table table .tournament-icon img {}
+
+/* .main-table table .tournament-icon::before {
+  content: '$';
+} */
 
 .main-table table .tournament-title {
   font-family: "Blogger Sans";
@@ -555,7 +572,6 @@ body {
 .main-table table .entry-fee {
   text-align: center;
 }
-
 
 .main-table table .prizes {
   font-family: 'Blogger Sans';
@@ -595,6 +611,10 @@ body {
   color: #6b6c6f;
 }
 
+.main-table table .join-button-position {
+  text-align: center;
+}
+
 .main-table table .join-button {
   width: 75px;
   height: 38px;
@@ -605,6 +625,8 @@ body {
   color: white;
   cursor: pointer;
 }
+
+.main-table table .translation {}
 
 .main-table .table-controls {
   display: flex;
@@ -689,7 +711,6 @@ body {
 }
 
 .guaranteed {
-  width: 80px;
   height: 16px;
   line-height: 1.16;
   border-radius: 8px;
@@ -721,6 +742,16 @@ body {
 
 .green-color-text {
   color: #34aa44 !important;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  color: #facf55;
+}
+
+button:focus, input:focus {
+  outline: none;
 }
 
 /* ////////////////////// MEDIA //////////////////////// */

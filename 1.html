@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tournaments</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -113,8 +112,10 @@
           <img src="img/widget1.png" alt="">
         </div>
         <div class="sidebar-filter">
-          <input class="search" type="text" placeholder="Search tournament">
-          <!-- <i class="fas fa-search search-icon"></i> -->
+          <div class="search-wrapper">
+            <img src="img/search.svg" alt="">
+            <input class="search" type="text" placeholder="Search tournament">
+          </div>
           <div class="filter-title">Entry fee</div>
           <div class="entry-fee">
             <input type="text" placeholder="From">
@@ -192,6 +193,7 @@
             <tr class="new">
               <td>
                 <div class="tournament-icon">
+                  <img class="star" src="./img/star-favorite-small.svg" alt="">
                   <img src="./220px-UEFA_Champions_League_logo_2.svg.png" alt="">
                 </div>
               </td>
@@ -209,8 +211,9 @@
               <td class="prizes green-color-text">
                 <div>2.350.000</div>
                 <div class="guaranteed">
-                  <img src="img/check.svg" alt="">
-                  <span>Guaranteed</span>
+                  <span>
+                    <img src="img/check.svg" alt=""><span>Guaranteed</span>
+                  </span>
                 </div>
               </td>
               <td>
@@ -428,20 +431,22 @@
           </tbody>
         </table>
         <div class="table-controls">
-          <button type="button">
-            <img src="img/pagination-arrow-left.svg" alt="">
-          </button>
-          <div class="page-select-wrapper">
-            <select name="page" id="page">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          <img src="img/dropdown-arrow.svg" alt="">
+          <div>
+            <button type="button">
+              <img src="img/pagination-arrow-left.svg" alt="">
+            </button>
+            <div class="page-select-wrapper">
+              <select name="page" id="page">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            <img src="img/dropdown-arrow.svg" alt="">
+            </div>
+            <button type="button">
+              <img src="img/pagination-arrow-right.svg" alt="">
+            </button>
           </div>
-          <button type="button">
-            <img src="img/pagination-arrow-right.svg" alt="">
-          </button>
         </div>
       </div>
     </div>

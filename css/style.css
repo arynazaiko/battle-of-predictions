@@ -304,18 +304,32 @@ body {
   font-family: "Blogger Sans";
   font-size: 14px;
   font-weight: normal;
-  color: #9ea0a5;
   margin-bottom: 30px;
   padding: 8px 16px;
 }
 
-.sidebar-filter .search {
+.sidebar-filter input::placeholder {
+  color: #9ea0a5;
+}
+
+.sidebar-filter .search-wrapper {
+  position: relative;
+}
+
+.sidebar-filter .search-wrapper img {
+  position: absolute;
+  right: 12px;
+  top: 9px;
+}
+
+.sidebar-filter .search-wrapper .search {
   width: 100%;
   height: 38px;
   border-radius: 4px;
   box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
   border: solid 1px #e2e5ed;
   background-color: #ffffff;
+  padding-right: 40px;
 }
 
 .sidebar-filter .filter-title {
@@ -373,15 +387,8 @@ body {
   color: white;
 }
 
-.advert {
-  /* height: 152px; */
-  /* border-radius: 4px; */
-  /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
-  background-blend-mode: multiply;
-  background-image: linear-gradient(to left, #facf55, #f6ab2f); */
-  /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04); */
-  /* background-blend-mode: multiply; */
-  /* background-image: linear-gradient(289deg, #6758f3, #e062f5); */
+.advert img{
+  width: 100%;
 }
 
 /* ///////////// RADIO BUTTONS /////////////// */
@@ -396,15 +403,18 @@ body {
   flex-grow: 1;
   /* height: 38px; */
   overflow: hidden;
-  box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
+  position: relative;
+}
+
+.radio-btns li > label {
   border: solid 1px;
   border-color: #e2e5ed;
   border-left: none;
   background-color: #ffffff;
-  position: relative;
+  box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
 }
 
-.radio-btns li:first-child {
+.radio-btns li:first-child > label {
   border-left: solid 1px #e2e5ed;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -415,7 +425,7 @@ body {
   border-bottom-right-radius: 4px;
 }
 
-.radio-btns label, .radio-btns input {
+.radio-btns li > label, .radio-btns li > input {
   display: block;
   top: 0;
   left: 0;
@@ -432,14 +442,8 @@ body {
   z-index: 100;
 }
 
-.radio-btns input[type="radio"]:checked + label,
-.Checked + label {
+.radio-btns input[type="radio"]:checked + label {
   background-color: rgba(230, 73, 45, 0.2);
-  font-family: 'Blogger Sans';
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  text-align: center;
   color: #e6492d;
 }
 
@@ -448,30 +452,24 @@ body {
   cursor: pointer;
 }
 
-.radio-btns.radio-btns-spaced label {
+.radio-btns.radio-btns-spaced li {
+  margin-right: 10px;
+}
+
+.radio-btns.radio-btns-spaced li > label {
   height: 100%;
   display: flex;
   align-items: center;
   padding: 4px 15px;
-}
-
-.radio-btns.radio-btns-spaced li {
-  margin-right: 10px;
   background-color: #fbfbfd;
+  border: solid 1px #e2e5ed;
   border-radius: 50px;
 }
 
-.radio-btns.radio-btns-spaced input[type="radio"]:checked + label,
-.Checked + label {
-  font-family: 'Roboto';
-  font-size: 14px;
-  font-weight: normal;
+.radio-btns.radio-btns-spaced li > input[type="radio"]:checked + label {
+  background: linear-gradient(to bottom, #e73c1e, #cf3014) no-repeat;
   color: #ffffff;
-  border-radius: 50px;
-  text-align: center;
-  box-shadow: 0 1px 1px 0 rgba(43, 26, 24, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.08);
-  border: solid 1px #ba0b15;
-  background-image: linear-gradient(to bottom, #e73c1e, #cf3014);
+  border-color: #ba0b15;
 }
 
 /*  ////////////////////// TABLE ///////////////////// */
@@ -550,6 +548,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding-left: 30px;
 }
 
 .main-table table .tournament-icon img {
@@ -557,8 +556,13 @@ body {
   height: 56px;
 }
 
-.main-table table .tournament-icon::before {
-  content: url('../img/star-favorite-small.svg');
+.main-table table .tournament-icon .star {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
 }
 
 .main-table table .tournament-title {
@@ -581,12 +585,30 @@ body {
 }
 
 .main-table table .prizes {
-  font-family: 'Blogger Sans';
   font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
   text-align: right;
 }
+
+.main-table table .guaranteed {
+  margin-left: auto;
+}
+
+.main-table table .guaranteed > span {
+  padding: 0 8px 0 4px;
+  border: solid 1px #2d9c3c;
+  border-radius: 8px;
+  white-space: nowrap;
+  font-size: 12px;
+  background-image: linear-gradient(to top, #34aa44, #38b249);
+  box-shadow: 0 1px 1px 0 rgba(19, 31, 21, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.guaranteed img {
+  margin-right: 4px;
+}
+
 
 .main-table .entries {
   display: flex;
@@ -676,6 +698,13 @@ body {
   background-color: #ffffff;
 }
 
+.main-table .table-controls > div {
+  display: flex;
+  border: solid 1px #eaedf3;
+  border-radius: 4px;
+  padding: 4px 0;
+}
+
 .main-table .table-controls select {
   -moz-appearance:none; /* Firefox */
   -webkit-appearance:none; /* Safari and Chrome */
@@ -684,13 +713,14 @@ body {
   width: 55px;
   padding: 8px 15px;
   background-color: rgba(255, 255, 255, 0);
-  box-shadow: 0 1px 0 0 #eaedf3;
   font-family: 'Blogger Sans';
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   color: #3e3f42;
   border: solid 1px #eaedf3;
+  border-top: none;
+  border-bottom: none;
   cursor: pointer;
 }
 
@@ -726,20 +756,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
-  border: solid 1px #eaedf3;
-  /* border-radius: 4px; */
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
   cursor: pointer;
 }
 
-.main-table .table-controls button:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-.main-table .table-controls button:last-child {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+.main-table .table-controls button {
+  border: none;
 }
 
 .main-table .table-controls button img {
@@ -757,25 +778,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-}
-
-.guaranteed {
-  width: 80px;
-  /* height: 16px; */
-  border-radius: 8px;
-  box-shadow: 0 1px 1px 0 rgba(19, 31, 21, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
-  border: solid 1px #2d9c3c;
-  background-image: linear-gradient(to top, #34aa44, #38b249);
-  text-align: center;
-  font-family: 'Blogger Sans';
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  color: #ffffff;
-}
-
-.guaranteed img {
-  margin-right: 4px;
 }
 
 .orange-color-text {

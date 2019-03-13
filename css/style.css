@@ -536,10 +536,6 @@ body {
   /* padding-right: 40px; */
 }
 
-.main-table table th:first-child {
-  text-align: center;
-}
-
 .main-table table td {
   font-family: "Blogger Sans";
   font-size: 14px;
@@ -548,10 +544,6 @@ body {
   text-align: left;
   color: #3e3f42;
   padding: 0px 10px 0 0;
-}
-
-.main-table table td:first-child {
-  /* padding-left: 10px; */
 }
 
 .main-table table .tournament-icon {
@@ -567,7 +559,6 @@ body {
 
 .main-table table .tournament-icon::before {
   content: url('../img/star-favorite-small.svg');
-  /* padding-right: 8px; */
 }
 
 .main-table table .tournament-title {
@@ -586,7 +577,7 @@ body {
 }
 
 .main-table table .entry-fee {
-  text-align: center;
+  text-align: right;
 }
 
 .main-table table .prizes {
@@ -642,7 +633,10 @@ body {
   cursor: pointer;
 }
 
-.main-table table .translation div {
+.main-table table .translation {
+  display: flex;
+  align-items: center;
+  padding: 5px 9px;
   width: 114px;
   height: 35px;
   border-radius: 8px;
@@ -653,6 +647,19 @@ body {
   font-style: normal;
   color: #e6492d;
 }
+
+.main-table table .translation .circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e6492d;
+  margin-right: 5px;
+}
+
+.main-table table .translation img {
+  color: #e6492d;
+}
+
 
 .main-table .table-controls {
   display: flex;

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="381px" height="70px" viewBox="0 0 381 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>C364227B-4FE7-4CB9-8784-8C0DB3837366</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Battle-of-Predictions-/-DraftKings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BofP-02-—-My-tournaments-01" transform="translate(-644.000000, -87.000000)">
+            <g id="Progress-Card" transform="translate(614.000000, 85.000000)">
+                <rect id="Rectangle" x="0" y="0" width="410" height="74" rx="22"></rect>
+                <rect id="Rectangle" fill="#EAEDF3" x="167" y="2" width="1" height="70"></rect>
+                <rect id="Rectangle-Copy-2" fill="#EAEDF3" x="410" y="2" width="1" height="70"></rect>
+                <g id="Graph" transform="translate(188.000000, 31.000000)" stroke="#34AA44" stroke-width="2">
+                    <path d="M0,29.0645161 C1.57768757,34.058499 5.99323641,36.5554904 13.2466465,36.5554904 C24.1267617,36.5554904 19.7182258,29.0645161 37.4454985,29.0645161 C55.1727712,29.0645161 49.7121027,10.0425116 53.1818182,8 C56.6515337,5.9574884 60.7728222,14.4889101 70.9090909,13.8064516 C81.0453597,13.1239932 78.1439371,5.26831805 88.6363636,5.61290323 C99.1287902,5.9574884 110.536704,19.0989048 119.595484,19 C128.654265,18.9010952 132.667044,8 147.205812,8 C161.744581,8 163.616115,26 174.46231,26 C181.693106,26 186.070498,17.368627 187.594485,0.105880968" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle id="Oval" fill="#FFFFFF" cx="188" cy="4" r="4"></circle>
+                </g>
+                <text id="14,290¢" font-family="BloggerSans-Bold, Blogger Sans" font-size="30" font-style="condensed" font-weight="bold" line-spacing="44" fill="#34AA44">
+                    <tspan x="30" y="50">14,290¢</tspan>
+                </text>
+                <text id="+12.4%" font-family="BloggerSans, Blogger Sans" font-size="14" font-style="condensed" font-weight="normal" line-spacing="22" fill="#3E3F42">
+                    <tspan x="273.938" y="18">+12.4%</tspan>
+                </text>
+                <text id="Current-winning" font-family="BloggerSans-Medium, Blogger Sans" font-size="16" font-style="condensed" font-weight="400" line-spacing="24" fill="#3E3F42">
+                    <tspan x="30" y="18">Current winning</tspan>
+                </text>
+                <text id="Monthly-result" font-family="BloggerSans, Blogger Sans" font-size="14" font-style="condensed" font-weight="normal" line-spacing="22" fill="#9EA0A5">
+                    <tspan x="188.606" y="18">Monthly result</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

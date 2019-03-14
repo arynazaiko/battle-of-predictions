@@ -173,8 +173,6 @@ body {
   width: 38px;
   height: 38px;
   margin-right: 15px;
-  background-color: brown;
-  border-radius: 50%;
 }
 
 .header .user-name {
@@ -219,6 +217,55 @@ body {
   color: #9ea0a5;
   cursor: pointer;
 }
+
+.topbar .dropdown-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  font-family: 'Blogger Sans';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  padding: 8px 15px;
+  border-radius: 12px;
+  background-color: #eaedf3;
+}
+
+.square {
+  width: 15px;
+  height: 15px;
+  transform: rotate(-315deg);
+  border-radius: 3px;
+  /* background-color: #eaedf3; */
+  background-color: red;
+}
+
+.topbar .dropdown-section-wrapper .dropdown-section {
+  display: flex;
+  align-items: center;
+}
+
+.topbar .dropdown-section:first-child {
+  margin-right: 20px;
+}
+
+.topbar .dropdown-section img {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.topbar .dropdown-section .dropdown-section-title {
+  margin-right: 5px;
+}
+
+.topbar .dropdown-section .dropdown-section-amount {
+  height: 22px;
+  padding: 0px 10px;
+  color: #3e3f42;
+  border-radius: 8px;
+  background-color: #fbfbfd;
+}
+
 
 .topbar .counter-section {
   margin-right: 20px;
@@ -266,6 +313,18 @@ body {
 }
 .topbar .create-lineup-button img {
   padding-right: 15px;
+}
+
+.topbar .progress-card {}
+.topbar .progress-card .current-winning {
+  font-family: 'Blogger Sans';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.topbar .progress-card .winning-amount {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* /////////////////////// MAIN  ///////////////////////*/
@@ -591,6 +650,7 @@ body {
 
 .main-table table .guaranteed {
   margin-left: auto;
+  margin-top: 3px;
 }
 
 .main-table table .guaranteed > span {
@@ -630,7 +690,7 @@ body {
   margin-left: unset;
 }
 
-.main-table .entries > div:last-child {
+.main-table .entries > div:nth-child(5) {
   background: #eaedf3;
   line-height: 28px;
   text-align: center;
@@ -798,7 +858,7 @@ body {
   color: #facf55;
 }
 
-button:focus, input:focus {
+button:focus, input:focus, select:focus {
   outline: none;
 }
 

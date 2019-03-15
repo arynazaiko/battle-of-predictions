@@ -56,36 +56,38 @@
   <div class="container">
     <div class="topbar">
       <div class="left">
-        <ul class="sections radio-btns radio-btns-spaced">
-          <li>
-            <input type="radio" id="now" name="section" checked="checked" />
-            <label for="now">
-              <img src="img/play.svg" alt="">
-              <span>Now</span>
-              <span>19</span>
-            </label>
-          </li>
-          <li>
-            <input type="radio" id="upcoming" name="section" />
-            <label for="upcoming">
-              <img src="img/calendar.svg" alt="">
-              <span>Upcoming</span>
-              <span>7</span>
-            </label>
-          </li>
-          <li>
-            <input type="radio" id="football" name="section" />
-            <label for="football">
-              <img src="img/arrow-repeat.svg" alt="">
-              <span>Complited</span>
-              <span>274</span>
-            </label>
-          </li>
-        </ul>
-        <div class="square"></div>
+        <div class="sections-wrapper">
+          <ul class="sections radio-btns radio-btns-spaced">
+            <li>
+              <input type="radio" id="now" name="section" checked="checked" />
+              <label for="now">
+                <img src="img/play.svg" alt="">
+                <span>Now</span>
+                <span>19</span>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="upcoming" name="section" />
+              <label for="upcoming">
+                <img src="img/calendar.svg" alt="">
+                <span>Upcoming</span>
+                <span>7</span>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="football" name="section" />
+              <label for="football">
+                <img src="img/arrow-repeat.svg" alt="">
+                <span>Complited</span>
+                <span>274</span>
+              </label>
+            </li>
+          </ul>
+        </div>
         <div class="dropdown-section-wrapper">
           <div class="dropdown-section">
-            <img src="./img/default.svg" alt="">
+            <input class="red-checkbox" id="games" type="checkbox">
+            <label for="games"></label>
             <span class="dropdown-section-title">Games:</span>
             <span class="dropdown-section-amount">12</span>
           </div>
@@ -134,7 +136,7 @@
           <tr>
             <td>
               <div class="tournament-icon">
-                <!-- <img class="star" src="./img/star-favorite-small.svg" alt=""> -->
+                <img class="star" src="./img/star-favorite-small.svg" alt="">
                 <img src="./logo-KY-shadow.png" alt="">
               </div>
             </td>
@@ -242,6 +244,17 @@
             </button>
           </div>
         </div>
+    </div>
+
+    <div class="dropdown-list">
+      <ul>
+        <li>Available translations</li>
+        <li>
+          <div>Real Valladolid</div>
+          <div>0 : 0</div>
+          <div>Villarreal</div>
+        </li>
+      </ul>
     </div>
   </div>
 </body>

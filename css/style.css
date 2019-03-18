@@ -220,6 +220,10 @@ body {
   margin-right: 5px;
 }
 
+.topbar .sections li label .radio-btn-title {
+  margin-right: 5px;
+}
+
 .topbar .show-other {
   font-family: "Blogger Sans";
   font-size: 12px;
@@ -270,8 +274,7 @@ body {
 }
 
 .topbar .dropdown-section .dropdown-section-amount {
-  height: 22px;
-  padding: 0px 10px;
+  padding: 3px 10px;
   color: #3e3f42;
   border-radius: 8px;
   background-color: #fbfbfd;
@@ -326,7 +329,10 @@ body {
   padding-right: 15px;
 }
 
-.topbar .progress-card {}
+.topbar .progress-card {
+  margin-right: 40px;
+}
+
 .topbar .progress-card .current-winning {
   font-family: 'Blogger Sans';
   font-size: 16px;
@@ -599,6 +605,10 @@ body {
   /* padding-right: 40px; */
 }
 
+.main-table table .right-position {
+  text-align: right;
+}
+
 .main-table table td {
   font-family: "Blogger Sans";
   font-size: 14px;
@@ -726,7 +736,11 @@ body {
   cursor: pointer;
 }
 
-.main-table table .translation {
+.main-table .translation {
+  text-align: right;
+}
+
+.main-table table .translation-wrapper {
   display: flex;
   align-items: center;
   padding: 5px 9px;
@@ -742,7 +756,7 @@ body {
   cursor: pointer;
 }
 
-.main-table table .translation .circle {
+.main-table table .translation-wrapper .circle {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -751,8 +765,12 @@ body {
   flex-shrink: 0;
 }
 
-.main-table table .translation img {
+.main-table table .translation-wrapper img {
   color: #e6492d;
+}
+
+.main-table table .translation-counter {
+  text-align: right;
 }
 
 
@@ -989,9 +1007,7 @@ button:focus, input:focus, select:focus {
   }
 }
 
-@media (max-width: 1222px) {
-
-}
+@media (max-width: 1222px) {}
 
 
 /* ///////////// CHECKBOX /////////////////// */
@@ -999,7 +1015,6 @@ button:focus, input:focus, select:focus {
 
 input[type="checkbox"].red-checkbox {
   display: none;
-
 }
 
 input[type="checkbox"].red-checkbox + label {
@@ -1008,6 +1023,8 @@ input[type="checkbox"].red-checkbox + label {
   border: 1px solid #f6f6f6;
   background-color: white;
   border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 input[type="checkbox"].red-checkbox:checked + label {

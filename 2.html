@@ -22,8 +22,8 @@
           <div class="divider"></div>
           <div class="menu">
             <ul>
-              <li class="active"><a href="#">Tournaments</a></li>
-              <li><a href="#">My tournaments</a></li>
+              <li><a href="#">Tournaments</a></li>
+              <li class="active"><a href="#">My tournaments</a></li>
               <li><a href="#">Leaderboard</a></li>
             </ul>
           </div>
@@ -62,7 +62,7 @@
               <input type="radio" id="now" name="section" checked="checked" />
               <label for="now">
                 <img src="img/play.svg" alt="">
-                <span>Now</span>
+                <span class="radio-btn-title">Now</span>
                 <span>19</span>
               </label>
             </li>
@@ -70,7 +70,7 @@
               <input type="radio" id="upcoming" name="section" />
               <label for="upcoming">
                 <img src="img/calendar.svg" alt="">
-                <span>Upcoming</span>
+                <span class="radio-btn-title">Upcoming</span>
                 <span>7</span>
               </label>
             </li>
@@ -78,7 +78,7 @@
               <input type="radio" id="football" name="section" />
               <label for="football">
                 <img src="img/arrow-repeat.svg" alt="">
-                <span>Complited</span>
+                <span class="radio-btn-title">Complited</span>
                 <span>274</span>
               </label>
             </li>
@@ -92,7 +92,8 @@
             <span class="dropdown-section-amount">12</span>
           </div>
           <div class="dropdown-section">
-            <img src="./img/default.svg" alt="">
+            <input class="red-checkbox" id="players" type="checkbox">
+            <label for="players"></label>
             <span class="dropdown-section-title">Players:</span>
             <span class="dropdown-section-amount">7</span>
           </div>
@@ -104,7 +105,7 @@
           <!-- <div class="current-winning">Current winning</div> -->
           <!-- <div class="winning-amount green-color-text">14,290¢</div> -->
         </div>
-        <div class="divider"></div>
+        <!-- <div class="divider"></div> -->
         <button class="topbar-button create-contest-button">
           <img src="img/user.svg" alt="">
           <span>Create contest</span>
@@ -127,9 +128,9 @@
             <th>MY PLACE</th>
             <th>WINNING</th>
             <th>ENTRIES</th>
-            <th>ENTRY FEE</th>
-            <th>TOP PRIZE</th>
-            <th>TRANSLATION</th>
+            <th class="right-position">ENTRY FEE</th>
+            <th class="right-position">TOP PRIZE</th>
+            <th class="right-position">TRANSLATION</th>
           </tr>
         </thead>
         <tbody>
@@ -171,8 +172,8 @@
                 </span>
               </div>
             </td>
-            <td>
-              <div class="translation">
+            <td class="translation">
+              <div class="translation-wrapper">
                 <div class="circle"></div>
                 <div>Translation available</div>
                 <img src="img/dropdown-arrow-down.svg" alt="">
@@ -252,8 +253,92 @@
               <div>7.000</div>
             </td>
             <td>
-              <div class="translation">
+              <div class="translation-counter">
                 11:21:03
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tournament-icon">
+                <img src="./WSA Cup Logo.png" alt="">
+              </div>
+            </td>
+            <td>
+              <div class="tournament-title">
+                FFB
+              </div>
+              <div class="user">
+                Dima Dima
+              </div>
+            </td>
+            <td class="grey-color-text">Team</td>
+            <td class="grey-color-text">Double ups</td>
+            <td>12/57</td>
+            <td>7</td>
+            <td class="green-color-text">40,402</td>
+            <td>
+              <div class="entries">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div><span>3</span></div>
+              </div>
+            </td>
+            <td class="entry-fee">20.000</td>
+            <td class="prizes green-color-text">
+              <div>800.000</div>
+            </td>
+            <td>
+              <div class="translation-counter">
+                102:02:39
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tournament-icon">
+                <img class="star" src="./img/star-favorite-small.svg" alt="">
+                <img src="./logo-KY-shadow.png" alt="">
+              </div>
+            </td>
+            <td>
+              <div class="tournament-title">
+                BofP League: Top of the world IV
+              </div>
+              <div class="user">
+                Yanina Limonova
+              </div>
+            </td>
+            <td class="grey-color-text">Single</td>
+            <td class="grey-color-text">BofP</td>
+            <td class="matches">7/11</td>
+            <td class="my-place orange-color-text">5</td>
+            <td class="green-color-text">27,716</td>
+            <td>
+              <div class="entries">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div><span>3</span></div>
+              </div>
+            </td>
+            <td class="entry-fee">Free</td>
+            <td class="prizes green-color-text">
+              <div>450.000</div>
+              <div class="guaranteed">
+                <span>
+                  <img src="img/check.svg" alt=""><span>Guaranteed</span>
+                </span>
+              </div>
+            </td>
+            <td>
+              <div class="translation">
+                <div class="circle"></div>
+                <div>Translation available</div>
+                <img src="img/dropdown-arrow-down.svg" alt="">
               </div>
             </td>
           </tr>
@@ -303,7 +388,7 @@
             <img src="./logo-KY-shadow.png" alt="">
             <span>Veracruz</span>
           </div>
-          <div class="score">0 : 0</div>
+          <div class="score">1 : 0</div>
           <div class="list-item-wrapper">
             <span>U.A.N.L</span>
             <img src="./WSA Cup Logo.png" alt="">
@@ -314,7 +399,7 @@
             <img src="./logo-KY-shadow.png" alt="">
             <span>Dijon FCO</span>
           </div>
-          <div class="score">0 : 0</div>
+          <div class="score">1 : 2</div>
           <div class="list-item-wrapper">
             <span>Marseille</span>
             <img src="./WSA Cup Logo.png" alt="">
@@ -325,7 +410,7 @@
             <img src="./logo-KY-shadow.png" alt="">
             <span>Chievo Verona</span>
           </div>
-          <div class="score">0 : 0</div>
+          <div class="score">0 : 3</div>
           <div class="list-item-wrapper">
             <span>AS Roma</span>
             <img src="./WSA Cup Logo.png" alt="">
@@ -336,7 +421,7 @@
             <img src="./logo-KY-shadow.png" alt="">
             <span>Mainz</span>
           </div>
-          <div class="score">0 : 0</div>
+          <div class="score">0 : 1</div>
           <div class="list-item-wrapper">
             <span>Bayer Leverkusen</span>
             <img src="./WSA Cup Logo.png" alt="">
@@ -347,7 +432,7 @@
             <img src="./logo-KY-shadow.png" alt="">
             <span>Moreirense</span>
           </div>
-          <div class="score">0 : 0</div>
+          <div class="score">2 : 0</div>
           <div class="list-item-wrapper">
             <span>FC Porto</span>
             <img src="./WSA Cup Logo.png" alt="">

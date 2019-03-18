@@ -11,47 +11,47 @@
 </head>
 <body>
   <div class="header">
-      <div class="container">
-        <div class="left">
-          <div class="logo">
-            <div class="logo-img">
-              <img src="img/logo-img.png" alt="">
-            </div>
-            <div class="logo-text">Battle of predictions</div>
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <div class="logo-img">
+            <img src="img/logo-img.png" alt="">
           </div>
-          <div class="divider"></div>
-          <div class="menu">
-            <ul>
-              <li><a href="#">Tournaments</a></li>
-              <li class="active"><a href="#">My tournaments</a></li>
-              <li><a href="#">Leaderboard</a></li>
-            </ul>
-          </div>
+          <div class="logo-text">Battle of predictions</div>
         </div>
-        <div class="right">
-          <span class="deposit green-color-text">1,290¢</span>
-          <button class="add-deposit">
-            <img src="img/plus.svg" alt="">
-            <span>Add deposit</span>
-          </button>
-          <div class="divider"></div>
-          <div class="notifications">
-            <div>
-              <img src="img/notification-message.svg" alt="">
-              <div class="notifications-amount">11</div>
-            </div>
-            <div>
-              <img src="img/notification-bell.svg" alt="">
-              <div class="notifications-amount">7</div>
-            </div>
-          </div>
-          <span class="user-pic">
-            <img src="img/user-pic.png" alt="">
-          </span>
-          <span class="user-name">Alexander</span>
-          <img class="dropdown-arrow" src="img/dropdown-arrow.svg" alt="">
+        <div class="divider"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Tournaments</a></li>
+            <li class="active"><a href="#">My tournaments</a></li>
+            <li><a href="#">Leaderboard</a></li>
+          </ul>
         </div>
       </div>
+      <div class="right">
+        <span class="deposit green-color-text">1,290¢</span>
+        <button class="add-deposit">
+          <img src="img/plus.svg" alt="">
+          <span>Add deposit</span>
+        </button>
+        <div class="divider"></div>
+        <div class="notifications">
+          <div>
+            <img src="img/notification-message.svg" alt="">
+            <div class="notifications-amount">11</div>
+          </div>
+          <div>
+            <img src="img/notification-bell.svg" alt="">
+            <div class="notifications-amount">7</div>
+          </div>
+        </div>
+        <span class="user-pic">
+          <img src="img/user-pic.png" alt="">
+        </span>
+        <span class="user-name">Alexander</span>
+        <img class="dropdown-arrow" src="img/dropdown-arrow.svg" alt="">
+      </div>
+    </div>
   </div>
   <div class="container">
     <div class="topbar">
@@ -84,6 +84,7 @@
             </li>
           </ul>
         </div>
+        <div class="square"></div>
         <div class="dropdown-section-wrapper">
           <div class="dropdown-section">
             <input class="red-checkbox" id="games" type="checkbox">
@@ -183,7 +184,8 @@
           <tr>
             <td>
               <div class="tournament-icon">
-                <img src="./220px-UEFA_Champions_League_logo_2.svg.png" alt="">
+                <img class="star" src="./img/star-favorite-small.svg" alt="">
+                <img  src="./220px-UEFA_Champions_League_logo_2.svg.png" alt="">
               </div>
             </td>
             <td>
@@ -197,7 +199,7 @@
             <td class="grey-color-text">Team</td>
             <td class="grey-color-text">BofP</td>
             <td>51/51</td>
-            <td>12</td>
+            <td class="orange-color-text">12</td>
             <td class="green-color-text">91,718</td>
             <td>
               <div class="entries">
@@ -212,8 +214,8 @@
             <td class="prizes green-color-text">
               <div>1.200.000</div>
             </td>
-            <td>
-              <div class="translation">
+            <td class="translation">
+              <div class="translation-wrapper">
                 <div class="circle"></div>
                 <div>Translation available</div>
                 <img src="img/dropdown-arrow-down.svg" alt="">
@@ -223,6 +225,7 @@
           <tr>
             <td>
               <div class="tournament-icon">
+                <img class="star" src="./img/star-favorite-small.svg" alt="">
                 <img src="./220px-UEFA_Champions_League_logo_2.svg.png" alt="">
               </div>
             </td>
@@ -275,7 +278,7 @@
             <td class="grey-color-text">Team</td>
             <td class="grey-color-text">Double ups</td>
             <td>12/57</td>
-            <td>7</td>
+            <td class="orange-color-text">7</td>
             <td class="green-color-text">40,402</td>
             <td>
               <div class="entries">
@@ -300,7 +303,7 @@
             <td>
               <div class="tournament-icon">
                 <img class="star" src="./img/star-favorite-small.svg" alt="">
-                <img src="./logo-KY-shadow.png" alt="">
+                <img src="./WSA Cup Logo.png" alt="">
               </div>
             </td>
             <td>
@@ -314,7 +317,7 @@
             <td class="grey-color-text">Single</td>
             <td class="grey-color-text">BofP</td>
             <td class="matches">7/11</td>
-            <td class="my-place orange-color-text">5</td>
+            <td class="my-place">5</td>
             <td class="green-color-text">27,716</td>
             <td>
               <div class="entries">
@@ -334,12 +337,119 @@
                 </span>
               </div>
             </td>
-            <td>
-              <div class="translation">
+            <td class="translation">
+              <div class="translation-wrapper">
                 <div class="circle"></div>
                 <div>Translation available</div>
                 <img src="img/dropdown-arrow-down.svg" alt="">
               </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tournament-icon">
+                <img src="./logo-KY-shadow.png" alt="">
+              </div>
+            </td>
+            <td>
+              <div class="tournament-title">
+                Daily English Football 8
+              </div>
+              <div class="user">
+                Павел Пискунов
+              </div>
+            </td>
+            <td class="grey-color-text">Single</td>
+            <td class="grey-color-text">H2H</td>
+            <td class="matches">7/13</td>
+            <td class="my-place orange-color-text">3</td>
+            <td class="green-color-text">974</td>
+            <td>
+              <div class="entries">
+                <div></div>
+                <div></div>
+              </div>
+            </td>
+            <td class="entry-fee">12.500</td>
+            <td class="prizes green-color-text">
+              <div>25.500</div>
+            </td>
+            <td class="translation-counter">
+              12:27:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tournament-icon">
+                <img src="./logo-KY-shadow.png" alt="">
+              </div>
+            </td>
+            <td>
+              <div class="tournament-title">
+                Fight Nights 3: Moscow octagon
+              </div>
+              <div class="user">
+                Pabloo Escobar
+              </div>
+            </td>
+            <td class="grey-color-text">Single</td>
+            <td class="grey-color-text">50/50</td>
+            <td class="matches">7/8</td>
+            <td class="my-place">500</td>
+            <td class="green-color-text">60,108</td>
+            <td>
+              <div class="entries">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </td>
+            <td class="entry-fee">Free</td>
+            <td class="prizes green-color-text">
+              <div>450.000</div>
+            </td>
+            <td class="translation">
+              <div class="translation-wrapper">
+                <div class="circle"></div>
+                <div>Translation available</div>
+                <img src="img/dropdown-arrow-down.svg" alt="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tournament-icon">
+                <img src="./logo-KY-shadow.png" alt="">
+              </div>
+            </td>
+            <td>
+              <div class="tournament-title">
+                Tour de france!
+              </div>
+              <div class="user">
+                Boris Dontsov
+              </div>
+            </td>
+            <td class="grey-color-text">Team</td>
+            <td class="grey-color-text">BofP</td>
+            <td class="matches">2/4</td>
+            <td class="my-place orange-color-text">8</td>
+            <td class="green-color-text">0</td>
+            <td>
+              <div class="entries">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div><span>4</span></div>
+              </div>
+            </td>
+            <td class="entry-fee">2,000</td>
+            <td class="prizes green-color-text">
+              <div>16,000</div>
+            </td>
+            <td class="translation-counter">
+              5:35:03
             </td>
           </tr>
         </tbody>
@@ -361,7 +471,7 @@
               <img src="img/pagination-arrow-right.svg" alt="">
             </button>
           </div>
-        </div>
+      </div>
     </div>
     <div class="dropdown-list">
       <ul>

@@ -269,6 +269,7 @@ body {
   margin-right: 5px;
   cursor: pointer;
 }
+
 .topbar .dropdown-section .dropdown-section-title {
   margin-right: 5px;
 }
@@ -1052,6 +1053,30 @@ input[type="checkbox"].red-checkbox:checked + label {
   .topbar .progress-card img {
     width: 340px;
   }
-
 }
 
+@media (max-width: 1200px) {
+  .header .deposit {
+    margin-right: 10px;
+  }
+
+  .header .notifications {
+    margin-right: 10px;
+  }
+
+  .header .user-name {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .topbar .progress-card img {
+    width: 320px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .topbar .progress-card {
+    margin-right: 10px;
+  }
+}

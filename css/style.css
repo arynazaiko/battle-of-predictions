@@ -660,6 +660,11 @@ body {
   color: #9ea0a5;
 }
 
+.main-table table .trophy-cup:before {
+  content: url('../img/trophy-cup-silhouette.svg');
+  margin-right: 3px;
+}
+
 .main-table table .entry-fee {
   text-align: right;
 }
@@ -995,6 +1000,7 @@ input[type="checkbox"].red-checkbox + label {
 
 input[type="checkbox"].red-checkbox:checked + label {
   background: url("../img/default.svg") no-repeat;
+  /* background: url('../img/checked.svg') no-repeat */
   border: none;
 }
 

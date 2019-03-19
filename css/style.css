@@ -1086,3 +1086,9 @@ input[type="checkbox"].red-checkbox:checked + label {
     margin-right: 10px;
   }
 }
+
+@media (max-width: 1140px) {
+  .topbar .progress-card img {
+    width: 300px;
+  }
+}

@@ -216,11 +216,11 @@ body {
 }
 
 .topbar .sections li label img {
-  margin-right: 5px;
+  margin-right: 5.5px;
 }
 
 .topbar .sections li label .radio-btn-title {
-  margin-right: 5px;
+  margin-right: 5.5px;
 }
 
 .topbar .show-other {
@@ -543,6 +543,10 @@ body {
   background: linear-gradient(to bottom, #e73c1e, #cf3014) no-repeat;
   color: #ffffff;
   border-color: #ba0b15;
+}
+
+.radio-btns.radio-btns-spaced li > input[type="radio"]:checked + label .radio-btn-title {
+  font-weight: 500;
 }
 
 /*  ////////////////////// TABLE ///////////////////// */
@@ -989,18 +993,18 @@ input[type="checkbox"].red-checkbox {
 }
 
 input[type="checkbox"].red-checkbox + label {
+  background: url("../img/default.svg") no-repeat;
   width: 18px;
   height: 18px;
-  border: 1px solid #f6f6f6;
-  background-color: white;
-  border-radius: 5px;
   margin-right: 5px;
   cursor: pointer;
+  /* border: 1px solid #f6f6f6; */
+  /* background-color: white; */
+  /* border-radius: 5px; */
 }
 
 input[type="checkbox"].red-checkbox:checked + label {
-  background: url("../img/default.svg") no-repeat;
-  /* background: url('../img/checked.svg') no-repeat */
+  background: url('../img/checked.svg') no-repeat;
   border: none;
 }
 
@@ -1091,4 +1095,10 @@ input[type="checkbox"].red-checkbox:checked + label {
   .topbar .progress-card img {
     width: 300px;
   }
+}
+
+@media (max-width: 1120px) {
+  .radio-btns.radio-btns-spaced li > label {
+    padding: 4px 7px;
+}
 }

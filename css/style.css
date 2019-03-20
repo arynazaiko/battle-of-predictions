@@ -669,6 +669,36 @@ body {
   margin-right: 3px;
 }
 
+/* .main-table table .winning {
+  text-align: right;
+} */
+
+.main-table .entries {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-table .entries > div,
+.main-table .entries > img {
+  width: 28px;
+  height: 28px;
+  margin-left: -12px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.main-table .entries > img:first-child,
+.main-table .entries > div:first-child {
+  margin-left: unset;
+}
+
+.main-table .entries > div:nth-child(5) {
+  background: #eaedf3;
+  line-height: 28px;
+  text-align: center;
+}
+
 .main-table table .entry-fee {
   text-align: right;
 }
@@ -700,31 +730,7 @@ body {
 }
 
 
-.main-table .entries {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 
-.main-table .entries > div,
-.main-table .entries > img {
-  width: 28px;
-  height: 28px;
-  margin-left: -12px;
-  background-color: grey;
-  border-radius: 50%;
-}
-
-.main-table .entries > img:first-child,
-.main-table .entries > div:first-child {
-  margin-left: unset;
-}
-
-.main-table .entries > div:nth-child(5) {
-  background: #eaedf3;
-  line-height: 28px;
-  text-align: center;
-}
 
 .main-table table .grey-color-text {
   color: #6b6c6f;

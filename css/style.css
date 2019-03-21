@@ -71,6 +71,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #3e3f42;
+  white-space: nowrap;
 }
 
 .divider {
@@ -183,6 +184,7 @@ body {
 .header .dropdown-arrow {
   width: 6px;
   height: 10px;
+  cursor: pointer;
 }
 
 /* //////////////////////// TOPBAR //////////////////////// */
@@ -223,6 +225,10 @@ body {
   margin-right: 5.5px;
 }
 
+.topbar .sections li label .radio-btn-amount {
+  opacity: 0.5;
+}
+
 .topbar .show-other {
   font-family: "Blogger Sans";
   font-size: 12px;
@@ -252,7 +258,7 @@ body {
   width: 15px;
   height: 15px;
   transform: rotate(-315deg);
-  /* border-radius: 3px; */
+  border-radius: 3px;
   background-color: #eaedf3;
 }
 
@@ -309,6 +315,7 @@ body {
   border: solid 1px #ff902a;
   background-image: linear-gradient(to bottom, #ffa24a, #fe8806);
   color: #fff;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -543,6 +550,7 @@ body {
   background: linear-gradient(to bottom, #e73c1e, #cf3014) no-repeat;
   color: #ffffff;
   border-color: #ba0b15;
+  /* box-shadow: 0 1px 1px 0 rgba(43, 26, 24, 0.1), 0 0 10px 0 rgba(230, 73, 45, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.08); */
 }
 
 .radio-btns.radio-btns-spaced li > input[type="radio"]:checked + label .radio-btn-title {
@@ -570,6 +578,7 @@ body {
 
 .main-table table th {
   padding: 0px 10px 0 0;
+  white-space: nowrap;
 }
 
 .main-table table tr {
@@ -664,14 +673,16 @@ body {
   color: #9ea0a5;
 }
 
-.main-table table .trophy-cup:before {
+/* .main-table table .trophy-cup:before {
+  position: absolute;
+  left: 48.7%;
   content: url('../img/trophy-cup-silhouette.svg');
   margin-right: 3px;
-}
-
-/* .main-table table .winning {
-  text-align: right;
 } */
+
+.main-table table .winning {
+  text-align: right;
+}
 
 .main-table .entries {
   display: flex;
@@ -949,6 +960,8 @@ button:focus, input:focus, select:focus {
 .dropdown-list ul .list-header .arrow-up {
   width: 6px;
   height: 10px;
+  margin-right: 6px;
+  cursor: pointer;
 }
 
 .dropdown-list .list-item-wrapper {

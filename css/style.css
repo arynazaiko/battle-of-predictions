@@ -656,6 +656,7 @@ body {
   transform: translateY(-50%);
   width: 12px;
   height: 12px;
+  cursor: pointer;
 }
 
 .main-table table .tournament-title {
@@ -1124,5 +1125,5 @@ input[type="checkbox"].red-checkbox:checked + label {
 @media (max-width: 1120px) {
   .radio-btns.radio-btns-spaced li > label {
     padding: 4px 7px;
-}
+  }
 }

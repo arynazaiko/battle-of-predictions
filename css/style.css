@@ -438,10 +438,62 @@ body {
   background-color: #ffffff;
 }
 
-.sidebar-filter .contest-style {
+.sidebar-filter .contest-style-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
+
+/* ////////////////////////////////////////////// */
+
+.radio-btns-lg {
+  /* display: flex; */
+  list-style: none;
+  font-size: 14px;
+  color: #9ea0a5;
+}
+
+.radio-btns-lg li {
+  /* flex-grow: 1; */
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+.radio-btns-lg li > label, .radio-btns-lg li > input {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+}
+
+.radio-btns-lg input {
+  position: absolute;
+}
+
+.radio-btns-lg input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.radio-btns-lg input[type="radio"]:checked + label {
+  background-color: rgba(230, 73, 45, 0.2);
+  color: #e6492d;
+}
+
+.radio-btns-lg label {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.radio-btns-lg label:hover {
+  background-color: rgba(234, 237, 243, 0.2);
+}
+
+/* ////////////////////////////////////////////// */
+
 
 .sidebar-filter .search-wrapper .search:hover, .sidebar-filter input:hover, .sidebar-filter .search-wrapper .search:focus, .sidebar-filter input:focus {
   border: solid 1px #c8cddc;
@@ -451,7 +503,7 @@ body {
   margin-bottom: 30px;
 }
 
-.sidebar-filter .sidebar-text {
+/* .sidebar-filter .sidebar-text {
   text-align: left;
   font-size: 14px;
   font-weight: normal;
@@ -462,17 +514,13 @@ body {
   padding: 9px 0;
 }
 
-/* .sidebar-filter .sidebar-text > div:not(:last-child) {
-  margin-bottom: 18px;
-} */
-
 .sidebar-filter .sidebar-text > div:hover {
   padding: 9px 0;
   border-radius: 8px;
   background-color: rgba(234, 237, 243, 0.2);
+  color: #3e3f42;
   cursor: pointer;
-
-}
+} */
 
 .sidebar .sidebar-filter .radio-btns .available-soon:after {
   content: 'Available soon';
@@ -555,7 +603,6 @@ body {
 
 .radio-btns label:hover {
   border: 1px solid #c8cddc;
-  /* box-sizing: border-box; */
 }
 
 .radio-btns.radio-btns-spaced li {
@@ -970,6 +1017,7 @@ button:focus, input:focus, select:focus {
 .dropdown-list ul .list-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 500;
 }
 
@@ -1058,16 +1106,21 @@ input[type="checkbox"].red-checkbox:checked + label {
 }
 
 
-/* //////////////////////// TOURNAMENT 3 ///////////////// */
+/* //////////////////////// TOURNAMENT 3/ DRAFT KINGS ///////////////// */
 
 .tournament {
-  height: 300px;
+  /* height: 300px; */
   background-color: #ffffff;
+}
+
+.tournament-wrapper {
+  display: flex;
 }
 
 .tournament img {
   width: 88px;
   height: 98px;
+  margin-right: 20px;
 }
 
 /* ////////////////////// MEDIA //////////////////////// */
